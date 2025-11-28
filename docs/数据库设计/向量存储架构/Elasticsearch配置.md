@@ -1,15 +1,4 @@
-# Elasticsearch配置详细文档
-
-<cite>
-**本文档引用的文件**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py)
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py)
-- [chunk.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chunk.py)
-- [search.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/search.py)
-- [settings.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/settings.py)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml)
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py)
-</cite>
+﻿# Elasticsearch配置详细文档
 
 ## 目录
 1. [简介](#简介)

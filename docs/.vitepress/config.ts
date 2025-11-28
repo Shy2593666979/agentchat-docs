@@ -6,6 +6,11 @@ export default withMermaid(defineConfig({
   description: '基于大语言模型的智能对话系统技术文档',
   base: '/agentchat-docs/',
   
+  // Mermaid 配置
+  mermaid: {
+    theme: 'default'
+  },
+  
   head: [
     ['link', { rel: 'icon', href: '/agentchat-docs/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3c82f6' }],

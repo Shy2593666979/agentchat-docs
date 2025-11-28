@@ -1,16 +1,4 @@
-# 用户API
-
-<cite>
-**本文档中引用的文件**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/errcode/user.py)
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/utils/JWT.py)
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/user.py)
-</cite>
+﻿# 用户API
 
 ## 目录
 1. [简介](#简介)

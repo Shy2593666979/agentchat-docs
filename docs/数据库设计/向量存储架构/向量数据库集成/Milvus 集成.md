@@ -1,14 +1,4 @@
-# Milvus 集成
-
-<cite>
-**本文档引用的文件**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py)
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py)
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml)
-- [milvus_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/vector_db/milvus_client.py)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/vector_db/__init__.py)
-</cite>
+﻿# Milvus 集成
 
 ## 目录
 1. [Milvus集成概述](#milvus集成概述)

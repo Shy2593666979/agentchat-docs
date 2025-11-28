@@ -1,14 +1,4 @@
-# ReAct智能体深度解析
-
-<cite>
-**本文档引用的文件**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py)
-- [simple_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/workspace/simple_agent.py)
-- [wechat_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/workspace/wechat_agent.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/prompts/chat.py)
-- [usage_metadata.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/callbacks/usage_metadata.py)
-</cite>
+﻿# ReAct智能体深度解析
 
 ## 目录
 1. [简介](#简介)

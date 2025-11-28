@@ -1,19 +1,4 @@
-# CSRF策略
-
-<cite>
-**本文档引用的文件**
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py)
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py)
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py)
-- [config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/config.py)
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/main.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/utils/JWT.py)
-- [exceptions.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/exceptions.py)
-- [docker-compose.yml](https://github.com/Shy2593666979/AgentChat/docker/docker-compose.yml)
-- [nginx.conf](https://github.com/Shy2593666979/AgentChat/docker/nginx.conf)
-</cite>
+﻿# CSRF策略
 
 ## 目录
 1. [简介](#简介)

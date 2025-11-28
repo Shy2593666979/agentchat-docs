@@ -1,23 +1,4 @@
-# RAG服务
-
-<cite>
-**本文档引用的文件**   
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py)
-- [parser.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/parser.py)
-- [embedding.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/embedding.py)
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py)
-- [rerank.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/rerank.py)
-- [doc_parser/pdf.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/pdf.py)
-- [doc_parser/docx.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/docx.py)
-- [doc_parser/text.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/text.py)
-- [doc_parser/markdown.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/markdown.py)
-- [vector_db.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py)
-- [retrieval.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/retrieval.py)
-- [chunk.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chunk.py)
-- [search.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/search.py)
-- [settings.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/settings.py)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml)
-</cite>
+﻿# RAG服务
 
 ## 目录
 1. [RAG服务概述](#rag服务概述)

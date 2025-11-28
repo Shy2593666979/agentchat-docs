@@ -1,20 +1,4 @@
-# UI组件体系
-
-<cite>
-**本文档引用的文件**
-- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/agentCard.vue)
-- [drawer.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/drawer/drawer.vue)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue)
-- [commonCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/commonCard/commonCard.vue)
-- [histortCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/historyCard/histortCard.vue)
-- [agentCard/index.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/index.ts)
-- [drawer/index.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/drawer/index.ts)
-- [AgentFormDialog/index.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/index.ts)
-- [type.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/type.ts)
-- [agent-fixed.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/agent/agent-fixed.vue)
-- [agent-editor.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/agent/agent-editor.vue)
-- [dialog.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/dialog.ts)
-</cite>
+﻿# UI组件体系
 
 ## 目录
 1. [概述](#概述)

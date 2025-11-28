@@ -1,20 +1,4 @@
-# 知识库API参考文档
-
-<cite>
-**本文档引用的文件**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/knowledge.py)
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/knowledge_file.py)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py)
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge_file.py)
-- [upload.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/upload.py)
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/knowledge.ts)
-- [knowledge-file.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/knowledge-file.ts)
-- [parser.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/parser.py)
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/knowledge.py)
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/knowledge_file.py)
-</cite>
+﻿# 知识库API参考文档
 
 ## 目录
 1. [简介](#简介)

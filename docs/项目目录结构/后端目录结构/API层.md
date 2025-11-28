@@ -1,22 +1,4 @@
-# API层
-
-<cite>
-**本文档中引用的文件**   
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/dialog.py)
-- [message.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/message.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chat.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/errcode/base.py)
-</cite>
+﻿# API层
 
 ## 目录
 1. [API路由聚合与版本控制](#api路由聚合与版本控制)

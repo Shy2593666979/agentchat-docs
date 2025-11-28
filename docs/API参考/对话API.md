@@ -1,19 +1,4 @@
-# 对话API技术文档
-
-<cite>
-**本文档引用的文件**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/router.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts)
-- [chatPage.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/conversation/chatPage/chatPage.vue)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/dialog.py)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/dialog.py)
-- [history.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/history.py)
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py)
-- [build.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/autobuild/build.py)
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/autobuild/manager.py)
-</cite>
+﻿# 对话API技术文档
 
 ## 目录
 1. [简介](#简介)

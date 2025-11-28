@@ -1,17 +1,4 @@
-# Agent API 完整参考文档
-
-<cite>
-**本文档中引用的文件**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py)
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py)
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/agent.py)
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py)
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py)
-- [settings.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/settings.py)
-</cite>
+﻿# Agent API 完整参考文档
 
 ## 目录
 1. [简介](#简介)

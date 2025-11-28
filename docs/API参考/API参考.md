@@ -1,24 +1,4 @@
-# API参考
-
-<cite>
-**本文档中引用的文件**  
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/dialog.py)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py)
-- [upload.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/upload.py)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py)
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chat.py)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/dialog.py)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/knowledge.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py)
-- [errcode/user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/errcode/user.py)
-</cite>
+﻿# API参考
 
 ## 目录
 1. [简介](#简介)

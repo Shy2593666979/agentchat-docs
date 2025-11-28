@@ -1,21 +1,4 @@
-# AgentChat前端与后端API集成方案
-
-<cite>
-**本文档引用的文件**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts)
-- [chat.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts)
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts)
-- [history.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/history.ts)
-- [conversation.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/conversation/conversation.vue)
-- [type.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/type.ts)
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/dialog.py)
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py)
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py)
-- [DEBUGGING_GUIDE.md](https://github.com/Shy2593666979/AgentChat/src/frontend/DEBUGGING_GUIDE.md)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py)
-</cite>
+﻿# AgentChat前端与后端API集成方案
 
 ## 目录
 1. [项目概述](#项目概述)

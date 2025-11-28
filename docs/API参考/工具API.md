@@ -1,20 +1,4 @@
-# 工具API
-
-<cite>
-**本文档中引用的文件**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/tool.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/tool.py)
-- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/weather/mcp_weather.py)
-- [action.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/get_weather/action.py)
-- [README.md](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/README.md)
-- [tool.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/tool.ts)
-- [tool.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/tool/tool.vue)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/__init__.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/prompts/tool.py)
-</cite>
+﻿# 工具API
 
 ## 目录
 1. [简介](#简介)

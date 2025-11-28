@@ -1,18 +1,4 @@
-# MCP服务配置模型深度文档
-
-<cite>
-**本文档中引用的文件**
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_server.py)
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_user_config.py)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_server.py)
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_user_config.py)
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py)
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py)
-- [schema.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/mcp.py)
-- [convert.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/utils/convert.py)
-- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json)
-- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/mcp_agent.py)
-</cite>
+﻿# MCP服务配置模型深度文档
 
 ## 目录
 1. [简介](#简介)

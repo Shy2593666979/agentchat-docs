@@ -1,23 +1,4 @@
-# MCP服务API
-
-<cite>
-**本文档引用的文件**
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_server.py)
-- [mcp_chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_chat.py)
-- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_agent.py)
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_user_config.py)
-- [mcp_stdio_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_stdio_server.py)
-- [v1/mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/mcp_server.py)
-- [v1/mcp_chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/mcp_chat.py)
-- [v1/mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/mcp_agent.py)
-- [v1/mcp_stdio_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/mcp_stdio_server.py)
-- [config/mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json)
-- [mcp_servers/lark_mcp/main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/lark_mcp/main.py)
-- [mcp_servers/weather/mcp_weather.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/weather/mcp_weather.py)
-- [services/mcp/manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/manager.py)
-- [schema/mcp.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/mcp.py)
-- [database/models/mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_server.py)
-</cite>
+﻿# MCP服务API
 
 ## 目录
 1. [介绍](#介绍)

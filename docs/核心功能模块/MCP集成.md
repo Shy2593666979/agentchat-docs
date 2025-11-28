@@ -1,21 +1,4 @@
-# MCP集成
-
-<cite>
-**本文档引用的文件**
-- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_server.py)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/mcp_server.py)
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py)
-- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_client.py)
-- [multi_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/multi_client.py)
-- [tools.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/load_mcp/tools.py)
-- [prompts.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/load_mcp/prompts.py)
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py)
-- [mcp.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/mcp.py)
-- [mcp-server.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/mcp-server/mcp-server.vue)
-- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py)
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/lark_mcp/main.py)
-</cite>
+﻿# MCP集成
 
 ## 目录
 1. [引言](#引言)

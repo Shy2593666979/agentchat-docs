@@ -1,21 +1,4 @@
-# 多Agent系统架构设计与实现机制
-
-<cite>
-**本文档引用的文件**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py)
-- [plan_execute_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/plan_execute_agent.py)
-- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/codeact_agent.py)
-- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/mcp_agent.py)
-- [structured_response_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/structured_response_agent.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/agent.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py)
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/models/manager.py)
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts)
-- [agent.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/agent/agent.vue)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/agent.py)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py)
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/manager.py)
-</cite>
+﻿# 多Agent系统架构设计与实现机制
 
 ## 目录
 1. [系统概述](#系统概述)

@@ -1,14 +1,4 @@
-# AgentChat API安全架构文档
-
-<cite>
-**本文档引用的文件**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py)
-- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/codeact_agent.py)
-- [tool.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/tool.json)
-</cite>
+﻿# AgentChat API安全架构文档
 
 ## 目录
 1. [概述](#概述)

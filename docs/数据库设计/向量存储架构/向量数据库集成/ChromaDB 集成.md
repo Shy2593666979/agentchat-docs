@@ -1,15 +1,4 @@
-# ChromaDB 集成
-
-<cite>
-**本文档中引用的文件**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py)
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/__init__.py)
-- [client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/client.py)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml)
-- [settings.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/settings.py)
-- [test_chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/test/test_chroma.py)
-</cite>
+﻿# ChromaDB 集成
 
 ## 目录
 1. [简介](#简介)
