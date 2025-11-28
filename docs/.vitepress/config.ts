@@ -3,17 +3,17 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'AgentChat',
   description: '基于大语言模型的智能对话系统技术文档',
-  base: '/AgentChat/',
+  base: '/agentchat-docs/',
   
   head: [
-    ['link', { rel: 'icon', href: '/AgentChat/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/agentchat-docs/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3c82f6' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'zh-CN' }],
     ['meta', { property: 'og:title', content: 'AgentChat | 智能对话系统' }],
     ['meta', { property: 'og:site_name', content: 'AgentChat' }],
-    ['meta', { property: 'og:image', content: '/AgentChat/logo.png' }],
-    ['meta', { property: 'og:url', content: 'https://shy2593666979.github.io/AgentChat/' }],
+    ['meta', { property: 'og:image', content: '/agentchat-docs/logo.png' }],
+    ['meta', { property: 'og:url', content: 'https://shy2593666979.github.io/agentchat-docs/' }],
   ],
 
   themeConfig: {
