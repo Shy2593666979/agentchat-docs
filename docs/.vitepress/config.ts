@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: 'AgentChat',
   description: '基于大语言模型的智能对话系统技术文档',
   base: '/agentchat-docs/',
@@ -236,6 +237,10 @@ export default defineConfig({
     }
   },
 
+
+
+
+
   vite: {
     optimizeDeps: {
       include: ['mermaid']
@@ -253,4 +258,4 @@ export default defineConfig({
     'http://localhost:8090/health',
     'http://localhost:7860/docs'
   ]
-})
+}))

@@ -1,3 +1,7 @@
 .kiro/
 
 node_modules/
+
+# VitePress 缓存和构建文件
+docs/.vitepress/cache/
+docs/.vitepress/dist/

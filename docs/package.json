@@ -14,6 +14,7 @@
     "vue": "^3.3.8"
   },
   "dependencies": {
-    "mermaid": "^10.6.1"
+    "mermaid": "^10.9.5",
+    "vitepress-plugin-mermaid": "^2.0.17"
   }
 }
