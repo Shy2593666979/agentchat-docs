@@ -21,8 +21,8 @@ MCP协议是一种模块化认知平台协议，旨在为智能体系统提供�
 MCP协议支持多种传输方式，包括SSE（Server-Sent Events）、stdio、WebSocket和streamable HTTP，这使得它可以适应不同类型的外部服务。系统通过MCP协议实现了服务的即插即用，开发者可以轻松地将新的服务集成到系统中，而无需修改核心代码。
 
 **Section sources**
-- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json#L1-L40)
-- [mcp.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/mcp.py#L1-L46)
+- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/mcp_server.json#L1-L40)
+- [mcp.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/mcp.py#L1-L46)
 
 ## MCP服务器配置与管理
 
@@ -113,13 +113,13 @@ WebsocketConnection --|> Connection
 ```
 
 **Diagram sources**
-- [multi_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py#L60-L177)
+- [multi_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
+- [sessions.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/sessions.py#L60-L177)
 
 **Section sources**
-- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json#L1-L40)
-- [multi_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py#L60-L177)
+- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/mcp_server.json#L1-L40)
+- [multi_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
+- [sessions.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/sessions.py#L60-L177)
 
 ## MCP服务器启动流程
 
@@ -143,7 +143,7 @@ Server->>Server : mcp.run(transport=args.transport)
 ```
 
 **Diagram sources**
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/lark_mcp/main.py#L1-L31)
+- [main.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/lark_mcp/main.py#L1-L31)
 
 ### arxiv服务器
 
@@ -164,11 +164,11 @@ Arxiv->>FastMCP : mcp.run(transport='stdio')
 ```
 
 **Diagram sources**
-- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
+- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
 
 **Section sources**
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/lark_mcp/main.py#L1-L31)
-- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
+- [main.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/lark_mcp/main.py#L1-L31)
+- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
 
 ## MCP工具调用链路
 
@@ -198,8 +198,8 @@ MCPManager-->>Agent : 返回最终结果
 ```
 
 **Diagram sources**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
-- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_client.py#L10-L53)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
+- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_client.py#L10-L53)
 
 ### 工具转换机制
 
@@ -225,12 +225,12 @@ ReturnResult --> End([结束])
 ```
 
 **Diagram sources**
-- [tools.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/load_mcp/tools.py#L149-L182)
+- [tools.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/load_mcp/tools.py#L149-L182)
 
 **Section sources**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
-- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_client.py#L10-L53)
-- [tools.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/load_mcp/tools.py#L149-L182)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
+- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_client.py#L10-L53)
+- [tools.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/load_mcp/tools.py#L149-L182)
 
 ## 前端界面集成
 
@@ -309,10 +309,10 @@ MCPServerPage --> MCPUserConfigUpdateRequest : "更新配置"
 ```
 
 **Diagram sources**
-- [mcp-server.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/mcp-server/mcp-server.vue#L1-L800)
+- [mcp-server.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/mcp-server/mcp-server.vue#L1-L800)
 
 **Section sources**
-- [mcp-server.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/mcp-server/mcp-server.vue#L1-L800)
+- [mcp-server.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/mcp-server/mcp-server.vue#L1-L800)
 
 ## 故障诊断与优化策略
 
@@ -384,12 +384,12 @@ ReturnResult --> End
 ```
 
 **Diagram sources**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L67-L114)
-- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_client.py#L47-L48)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L67-L114)
+- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_client.py#L47-L48)
 
 **Section sources**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L67-L114)
-- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_client.py#L47-L48)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L67-L114)
+- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_client.py#L47-L48)
 
 ## 结论
 

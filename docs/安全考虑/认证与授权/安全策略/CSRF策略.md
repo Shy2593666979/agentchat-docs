@@ -49,7 +49,7 @@ B --> E
 ```
 
 **图表来源**
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/main.py#L78-L108)
+- [main.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/main.py#L78-L108)
 - [docker-compose.yml](https://github.com/Shy2593666979/AgentChat/docker/docker-compose.yml#L50-L93)
 
 ## CSRF保护机制设计
@@ -88,8 +88,8 @@ AuthJWT --> CSRFProtection : "使用"
 ```
 
 **图表来源**
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py#L37-L45)
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py#L316-L416)
+- [auth_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_config.py#L37-L45)
+- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_jwt.py#L316-L416)
 
 ### 默认CSRF保护配置
 
@@ -104,8 +104,8 @@ AuthJWT --> CSRFProtection : "使用"
 | `httponly` | `False` | CSRF Cookie是否设置HttpOnly |
 
 **节来源**
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py#L37-L45)
-- [config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/config.py#L37-L45)
+- [auth_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_config.py#L37-L45)
+- [config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/config.py#L37-L45)
 
 ## 核心组件分析
 
@@ -129,8 +129,8 @@ Settings --> AuthConfig : "配置"
 ```
 
 **图表来源**
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py#L4-L7)
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/main.py#L86-L90)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/JWT.py#L4-L7)
+- [main.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/main.py#L86-L90)
 
 ### Cookie设置机制
 
@@ -153,12 +153,12 @@ Response-->>Client : 返回Cookie
 ```
 
 **图表来源**
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py#L342-L402)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L70-L72)
+- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_jwt.py#L342-L402)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L70-L72)
 
 **节来源**
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py#L342-L402)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L70-L72)
+- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_jwt.py#L342-L402)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L70-L72)
 
 ## JWT认证流程
 
@@ -183,8 +183,8 @@ K --> N[samesite=None]
 ```
 
 **图表来源**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L68-L77)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L146-L157)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L68-L77)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L146-L157)
 
 ### 令牌验证流程
 
@@ -206,11 +206,11 @@ Middleware-->>Client : 处理请求
 ```
 
 **图表来源**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L114-L128)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L114-L128)
 
 **节来源**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L68-L77)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L114-L128)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L68-L77)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L114-L128)
 
 ## 安全配置分析
 
@@ -276,8 +276,8 @@ F -.-> J[较低的安全性]
 ```
 
 **节来源**
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py#L37-L45)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py#L7)
+- [auth_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_config.py#L37-L45)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/JWT.py#L7)
 
 ## 风险分析与补偿措施
 
@@ -324,7 +324,7 @@ end
 ```
 
 **图表来源**
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py#L349-L351)
+- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_jwt.py#L349-L351)
 - [nginx.conf](https://github.com/Shy2593666979/AgentChat/docker/nginx.conf#L61-L65)
 
 ### 具体补偿措施分析
@@ -338,8 +338,8 @@ end
 | 健康检查 | Docker健康检查 | 确保服务可用性 |
 
 **节来源**
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py#L349-L351)
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/main.py#L24-L27)
+- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_jwt.py#L349-L351)
+- [main.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/main.py#L24-L27)
 
 ## 最佳实践建议
 

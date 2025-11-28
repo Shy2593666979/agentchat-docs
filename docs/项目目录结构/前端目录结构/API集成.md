@@ -61,8 +61,8 @@ H --> M
 ```
 
 **架构图来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L1-L28)
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L1-L61)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L1-L28)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L1-L61)
 
 ### 数据流架构
 
@@ -87,8 +87,8 @@ F-->>U : 更新界面
 ```
 
 **序列图来源**
-- [conversation.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/conversation/conversation.vue#L83-L105)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49-L122)
+- [conversation.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/conversation/conversation.vue#L83-L105)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49-L122)
 
 ## 前端API封装层
 
@@ -110,7 +110,7 @@ F --> G[请求完成]
 ```
 
 **流程图来源**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L13-L30)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L13-L30)
 
 #### 响应拦截器机制
 
@@ -130,10 +130,10 @@ G --> J[前端错误处理]
 ```
 
 **流程图来源**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L38-L57)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L38-L57)
 
 **章节来源**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L1-L61)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L1-L61)
 
 ### API模块设计
 
@@ -149,7 +149,7 @@ G --> J[前端错误处理]
 | Mars示例 | `sendMarsExample` | `number, onmessage, onclose` | `AbortController` | 发送Mars示例 |
 
 **表格来源**
-- [chat.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts#L16-L146)
+- [chat.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/chat.ts#L16-L146)
 
 #### 智能体API模块
 
@@ -193,12 +193,12 @@ AgentAPI --> AgentResponse : returns
 ```
 
 **类图来源**
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts#L4-L46)
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts#L49-L163)
+- [agent.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/agent.ts#L4-L46)
+- [agent.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/agent.ts#L49-L163)
 
 **章节来源**
-- [chat.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts#L1-L147)
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts#L1-L163)
+- [chat.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/chat.ts#L1-L147)
+- [agent.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/agent.ts#L1-L163)
 
 ## 后端API路由架构
 
@@ -223,7 +223,7 @@ A --> M[Upload模块]
 ```
 
 **图表来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L6-L28)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L6-L28)
 
 ### 核心API端点
 
@@ -237,7 +237,7 @@ A --> M[Upload模块]
 | 知识库 | `/api/v1/knowledge/*` | POST/GET/DELETE | 知识库管理 |
 
 **表格来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L8-L28)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L8-L28)
 
 ### 流式响应处理
 
@@ -262,11 +262,11 @@ R-->>C : 关闭连接
 ```
 
 **序列图来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49-L122)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49-L122)
 
 **章节来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L1-L28)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L1-L122)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L1-L28)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L1-L122)
 
 ## 认证与授权机制
 
@@ -292,8 +292,8 @@ M --> |否| O[清除Token并重定向]
 ```
 
 **流程图来源**
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py#L1-L81)
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py#L1-L806)
+- [auth_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_config.py#L1-L81)
+- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_jwt.py#L1-L806)
 
 ### 认证配置参数
 
@@ -306,7 +306,7 @@ M --> |否| O[清除Token并重定向]
 | `header_type` | Bearer | 认证类型前缀 |
 
 **表格来源**
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py#L13-L25)
+- [auth_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_config.py#L13-L25)
 
 ### 前端认证处理
 
@@ -328,12 +328,12 @@ H --> |其他| K[正常处理响应]
 ```
 
 **流程图来源**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L13-L57)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L13-L57)
 
 **章节来源**
-- [auth_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_config.py#L1-L81)
-- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/src/backend/fastapi_jwt_auth/auth_jwt.py#L1-L806)
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L1-L61)
+- [auth_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_config.py#L1-L81)
+- [auth_jwt.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/fastapi_jwt_auth/auth_jwt.py#L1-L806)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L1-L61)
 
 ## TypeScript类型安全实践
 
@@ -377,8 +377,8 @@ DialogCreateType --> Chat : used_in
 ```
 
 **类图来源**
-- [type.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/type.ts#L1-L167)
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts#L4-L46)
+- [type.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/type.ts#L1-L167)
+- [agent.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/agent.ts#L4-L46)
 
 ### 类型安全API调用
 
@@ -418,11 +418,11 @@ function createAgentAPI(data: AgentCreateRequest) {
 | 超时错误 | 显示加载状态 | 提供进度指示 |
 
 **表格来源**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L46-L57)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L46-L57)
 
 **章节来源**
-- [type.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/type.ts#L1-L167)
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts#L4-L46)
+- [type.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/type.ts#L1-L167)
+- [agent.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/agent.ts#L4-L46)
 
 ## 对话通信流程
 
@@ -457,8 +457,8 @@ CV->>CV : 显示消息
 ```
 
 **序列图来源**
-- [conversation.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/conversation/conversation.vue#L83-L105)
-- [conversation.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/conversation/conversation.vue#L178-L247)
+- [conversation.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/conversation/conversation.vue#L83-L105)
+- [conversation.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/conversation/conversation.vue#L178-L247)
 
 ### 流式对话实现
 
@@ -480,7 +480,7 @@ K --> L[显示错误信息]
 ```
 
 **流程图来源**
-- [chat.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts#L16-L61)
+- [chat.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/chat.ts#L16-L61)
 
 #### 后端流式生成
 
@@ -501,12 +501,12 @@ I --> J[关闭连接]
 ```
 
 **流程图来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L93-L116)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L93-L116)
 
 **章节来源**
-- [conversation.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/conversation/conversation.vue#L1-L800)
-- [chat.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts#L16-L61)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49-L122)
+- [conversation.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/conversation/conversation.vue#L1-L800)
+- [chat.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/chat.ts#L16-L61)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49-L122)
 
 ## 错误处理与调试
 
@@ -536,7 +536,7 @@ L --> P[联系技术支持]
 ```
 
 **流程图来源**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L46-L57)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L46-L57)
 
 ### 后端错误处理
 
@@ -585,7 +585,7 @@ K --> N[修复业务逻辑]
 ```
 
 **流程图来源**
-- [DEBUGGING_GUIDE.md](https://github.com/Shy2593666979/AgentChat/src/frontend/DEBUGGING_GUIDE.md#L1-L107)
+- [DEBUGGING_GUIDE.md](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/DEBUGGING_GUIDE.md#L1-L107)
 
 #### 常见问题排查
 
@@ -597,11 +597,11 @@ K --> N[修复业务逻辑]
 | 网络超时 | 请求长时间无响应 | 检查网络连接 | 优化网络配置 |
 
 **表格来源**
-- [DEBUGGING_GUIDE.md](https://github.com/Shy2593666979/AgentChat/src/frontend/DEBUGGING_GUIDE.md#L63-L107)
+- [DEBUGGING_GUIDE.md](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/DEBUGGING_GUIDE.md#L63-L107)
 
 **章节来源**
-- [request.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/utils/request.ts#L46-L57)
-- [DEBUGGING_GUIDE.md](https://github.com/Shy2593666979/AgentChat/src/frontend/DEBUGGING_GUIDE.md#L1-L107)
+- [request.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/utils/request.ts#L46-L57)
+- [DEBUGGING_GUIDE.md](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/DEBUGGING_GUIDE.md#L1-L107)
 
 ## 性能优化策略
 

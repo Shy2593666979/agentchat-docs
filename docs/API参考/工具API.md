@@ -49,13 +49,13 @@ G --> G3["web_search/"]
 ```
 
 **图表来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L1-L86)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L1-L124)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/tool.py#L1-L104)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L1-L86)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L1-L124)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/tool.py#L1-L104)
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L1-L86)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L1-L124)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L1-L86)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L1-L124)
 
 ## 核心组件
 
@@ -77,9 +77,9 @@ G --> G3["web_search/"]
 支持外部服务集成，实现Model Context Protocol协议。
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L10-L86)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L9-L124)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/tool.py#L9-L104)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L10-L86)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L9-L124)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/tool.py#L9-L104)
 
 ## 架构概览
 
@@ -123,9 +123,9 @@ MCP_SERVER --> EXTERNAL_API
 ```
 
 **图表来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L10-L86)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L9-L124)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/tool.py#L9-L104)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L10-L86)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L9-L124)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/tool.py#L9-L104)
 
 ## 详细组件分析
 
@@ -169,13 +169,13 @@ Router-->>Client : JSON响应
 ```
 
 **图表来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L27-L34)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L60-L65)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/tool.py#L68-L72)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L27-L34)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L60-L65)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/tool.py#L68-L72)
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L27-L34)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L60-L65)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L27-L34)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L60-L65)
 
 ### 工具数据模型
 
@@ -212,12 +212,12 @@ ToolTable --> ToolUpdateRequest : "更新时"
 ```
 
 **图表来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/tool.py#L12-L36)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py#L5-L16)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/tool.py#L12-L36)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/tool.py#L5-L16)
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/tool.py#L12-L36)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py#L5-L16)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/tool.py#L12-L36)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/tool.py#L5-L16)
 
 ## API端点文档
 
@@ -348,8 +348,8 @@ ToolTable --> ToolUpdateRequest : "更新时"
 ```
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L27-L86)
-- [tool.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/tool.ts#L1-L79)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L27-L86)
+- [tool.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/tool.ts#L1-L79)
 
 ## 工具元数据结构
 
@@ -384,11 +384,11 @@ E --> H["错误处理"]
 ```
 
 **图表来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py#L5-L16)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/tool.py#L5-L16)
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/tool.py#L12-L36)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py#L5-L16)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/tool.py#L12-L36)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/tool.py#L5-L16)
 
 ## MCP协议集成
 
@@ -422,8 +422,8 @@ EXTERNAL_API --> DATA_SOURCE
 ```
 
 **图表来源**
-- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
-- [README.md](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/README.md#L1-L136)
+- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
+- [README.md](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/README.md#L1-L136)
 
 ### MCP工具实现示例
 
@@ -444,7 +444,7 @@ MCP-->>Agent : 返回工具结果
 ```
 
 **图表来源**
-- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L15-L48)
+- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L15-L48)
 
 ### MCP服务器类型
 
@@ -457,8 +457,8 @@ MCP-->>Agent : 返回工具结果
 | streamable-http | HTTP流模式 | 异步数据传输 |
 
 **章节来源**
-- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
-- [README.md](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/README.md#L1-L136)
+- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
+- [README.md](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/README.md#L1-L136)
 
 ## 工具函数编写规范
 
@@ -476,7 +476,7 @@ E --> F["导出工具函数"]
 ```
 
 **图表来源**
-- [action.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/get_weather/action.py#L1-L54)
+- [action.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/tools/get_weather/action.py#L1-L54)
 
 ### 工具函数特征
 
@@ -505,11 +505,11 @@ WeatherTool --> ToolDecorator : "使用装饰器"
 ```
 
 **图表来源**
-- [action.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/get_weather/action.py#L9-L54)
+- [action.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/tools/get_weather/action.py#L9-L54)
 
 **章节来源**
-- [action.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/get_weather/action.py#L1-L54)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/__init__.py#L1-L48)
+- [action.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/tools/get_weather/action.py#L1-L54)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/tools/__init__.py#L1-L48)
 
 ## 自定义工具扩展
 
@@ -560,10 +560,10 @@ B --> G["WeChatTools"]
 ```
 
 **图表来源**
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/__init__.py#L1-L48)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/tools/__init__.py#L1-L48)
 
 **章节来源**
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/tools/__init__.py#L1-L48)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/tools/__init__.py#L1-L48)
 
 ## 故障排除指南
 
@@ -607,8 +607,8 @@ B --> G["WeChatTools"]
 4. **资源监控**: 监控工具的资源使用情况
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L26-L32)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/tool.py#L29-L34)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L26-L32)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/tool.py#L29-L34)
 
 ## 结论
 

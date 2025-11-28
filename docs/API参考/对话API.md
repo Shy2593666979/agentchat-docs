@@ -61,8 +61,8 @@ CHAT_SERVICE --> REDIS
 ```
 
 **图表来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/router.py#L1-L50)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L1-L50)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/router.py#L1-L50)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L1-L50)
 
 ## 核心API端点
 
@@ -86,8 +86,8 @@ API-->>Client : {dialog_id, name, agent_id}
 ```
 
 **图表来源**
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/dialog.py#L29-L37)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/dialog.py#L12-L16)
+- [dialog.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/dialog.py#L29-L37)
+- [dialog.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/dialog.py#L12-L16)
 
 **端点详情：**
 - **路径**: `/api/v1/dialog`
@@ -103,8 +103,8 @@ API-->>Client : {dialog_id, name, agent_id}
 - **响应**: 包含新创建对话的唯一标识符
 
 **节来源**
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/dialog.py#L29-L37)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/dialog.py#L12-L16)
+- [dialog.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/dialog.py#L29-L37)
+- [dialog.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/dialog.py#L12-L16)
 
 ### 发送消息 (/api/v1/chat)
 
@@ -131,8 +131,8 @@ API-->>Client : SSE流式响应
 ```
 
 **图表来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49-L121)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L229-L266)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49-L121)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L229-L266)
 
 **端点详情：**
 - **路径**: `/api/v1/chat`
@@ -147,8 +147,8 @@ API-->>Client : SSE流式响应
   ```
 
 **节来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49-L121)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts#L16-L61)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49-L121)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/chat.ts#L16-L61)
 
 ## WebSocket连接机制
 
@@ -175,8 +175,8 @@ Cleanup --> End
 ```
 
 **图表来源**
-- [build.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/autobuild/build.py#L15-L40)
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/autobuild/manager.py#L45-L67)
+- [build.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/autobuild/build.py#L15-L40)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/autobuild/manager.py#L45-L67)
 
 **WebSocket特性：**
 - **认证**: 基于JWT的WebSocket认证
@@ -184,8 +184,8 @@ Cleanup --> End
 - **错误处理**: 完善的异常捕获和连接恢复机制
 
 **节来源**
-- [build.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/autobuild/build.py#L15-L40)
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/autobuild/manager.py#L13-L67)
+- [build.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/autobuild/build.py#L15-L40)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/autobuild/manager.py#L13-L67)
 
 ## 消息流式响应处理
 
@@ -220,9 +220,9 @@ ReactAgent --> BaseChatModel
 ```
 
 **图表来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L25-L48)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L103-L267)
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L39-L279)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L25-L48)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L103-L267)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L39-L279)
 
 **流式响应格式：**
 - **响应块**: `data: {"type": "response_chunk", "data": {"chunk": "文本片段"}}`
@@ -230,8 +230,8 @@ ReactAgent --> BaseChatModel
 - **错误处理**: 自动兜底机制，确保响应完整性
 
 **节来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L25-L48)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L229-L267)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L25-L48)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L229-L267)
 
 ## 对话管理
 
@@ -263,8 +263,8 @@ TimedOut --> [*] : 自动清理
 - **清理**: 自动清理长时间未活动的对话
 
 **节来源**
-- [history.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/history.py#L17-L88)
-- [dialog.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/dialog.py#L9-L64)
+- [history.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/history.py#L17-L88)
+- [dialog.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/dialog.py#L9-L64)
 
 ## Agent执行流程
 
@@ -286,7 +286,7 @@ Stream --> End([结束])
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L82-L279)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L82-L279)
 
 ### Agent配置结构
 
@@ -313,12 +313,12 @@ AgentConfig --> StreamingAgent
 ```
 
 **图表来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L33-L42)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L103-L267)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L33-L42)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L103-L267)
 
 **节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L39-L279)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L33-L42)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L39-L279)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L33-L42)
 
 ## 前端集成示例
 
@@ -376,8 +376,8 @@ function sendMessage(data: Chat, onmessage: any, onclose: any) {
 - **错误处理**: 完善的异常处理机制
 
 **节来源**
-- [chat.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/chat.ts#L16-L61)
-- [chatPage.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/conversation/chatPage/chatPage.vue#L173-L200)
+- [chat.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/chat.ts#L16-L61)
+- [chatPage.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/conversation/chatPage/chatPage.vue#L173-L200)
 
 ## 错误处理与超时策略
 
@@ -407,8 +407,8 @@ Response --> End
 - **降级处理**: 网络异常时的本地缓存回退
 
 **节来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L253-L262)
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/autobuild/manager.py#L55-L67)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L253-L262)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/autobuild/manager.py#L55-L67)
 
 ## 最佳实践
 

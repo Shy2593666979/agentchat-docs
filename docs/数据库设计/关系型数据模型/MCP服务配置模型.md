@@ -62,12 +62,12 @@ MCPServerStdioTable --> MCPServerTable : "stdio服务器类型"
 ```
 
 **图表来源**
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_server.py#L30-L61)
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_user_config.py#L10-L49)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_server.py#L30-L61)
+- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_user_config.py#L10-L49)
 
 **章节来源**
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_server.py#L30-L61)
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_user_config.py#L10-L49)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_server.py#L30-L61)
+- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_user_config.py#L10-L49)
 
 ## 配置字段详解
 
@@ -118,8 +118,8 @@ MCPServerStdioTable --> MCPServerTable : "stdio服务器类型"
 - **影响**: 影响用户配置界面的显示逻辑
 
 **章节来源**
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_server.py#L33-L46)
-- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json#L1-L40)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_server.py#L33-L46)
+- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/mcp_server.json#L1-L40)
 
 ## MCP服务器类型架构
 
@@ -148,8 +148,8 @@ E --> H[本地工具调用]
 ```
 
 **图表来源**
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py#L175-L177)
-- [schema.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/mcp.py#L10-L43)
+- [sessions.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/sessions.py#L175-L177)
+- [schema.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/mcp.py#L10-L43)
 
 ### SSE连接配置
 
@@ -183,8 +183,8 @@ Stdio连接用于本地进程通信：
 | cwd | string | 否 | 工作目录路径 |
 
 **章节来源**
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py#L97-L161)
-- [schema.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/mcp.py#L10-L43)
+- [sessions.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/sessions.py#L97-L161)
+- [schema.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/mcp.py#L10-L43)
 
 ## 安全存储策略
 
@@ -210,7 +210,7 @@ K --> M[客户端响应]
 ```
 
 **图表来源**
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_user_config.py#L25-L29)
+- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_user_config.py#L25-L29)
 
 ### 配置字段安全处理
 
@@ -235,7 +235,7 @@ K --> M[客户端响应]
 | 系统用户 | 公共配置 | 只读访问 |
 
 **章节来源**
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_user_config.py#L8-L94)
+- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/mcp_user_config.py#L8-L94)
 
 ## 运行时实例化流程
 
@@ -263,8 +263,8 @@ Service-->>Client : 返回MCP客户端
 ```
 
 **图表来源**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L22-L35)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_server.py#L12-L19)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L22-L35)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/mcp_server.py#L12-L19)
 
 ### 连接建立过程
 
@@ -295,8 +295,8 @@ Service-->>Client : 返回MCP客户端
 | 配置无效 | 抛出异常 | 0次 | 不重试 |
 
 **章节来源**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L30-L35)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_server.py#L56-L62)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L30-L35)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/mcp_server.py#L56-L62)
 
 ## 与相关模型的关联
 
@@ -334,8 +334,8 @@ MCPAgentTable ||--o{ MCPUserConfigTable : "共享配置"
 ```
 
 **图表来源**
-- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_agent.py#L10-L39)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/mcp_server.py#L30-L61)
+- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_agent.py#L10-L39)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/mcp_server.py#L30-L61)
 
 ### 配置继承与覆盖机制
 
@@ -357,8 +357,8 @@ MCPAgentTable ||--o{ MCPUserConfigTable : "共享配置"
 - 临时性的功能开关
 
 **章节来源**
-- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/mcp_agent.py#L25-L113)
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_user_config.py#L67-L82)
+- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/mcp_agent.py#L25-L113)
+- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/mcp_user_config.py#L67-L82)
 
 ## 配置加载机制
 
@@ -379,7 +379,7 @@ I --> F
 ```
 
 **图表来源**
-- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json#L1-L40)
+- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/mcp_server.json#L1-L40)
 
 ### 动态配置管理
 
@@ -407,8 +407,8 @@ I --> F
 5. 更新依赖关系
 
 **章节来源**
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_server.py#L12-L19)
-- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/mcp_user_config.py#L8-L18)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/mcp_server.py#L12-L19)
+- [mcp_user_config.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/mcp_user_config.py#L8-L18)
 
 ## 最佳实践建议
 

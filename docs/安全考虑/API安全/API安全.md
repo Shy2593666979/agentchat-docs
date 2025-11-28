@@ -59,7 +59,7 @@ PyodideSandboxTool --> SyncPyodideSandbox : uses
 ```
 
 **图表来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L66-L737)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L66-L737)
 
 ### Deno子进程安全模型
 
@@ -70,7 +70,7 @@ PyodideSandboxTool --> SyncPyodideSandbox : uses
 3. **权限边界**：Deno的安全模型限制了进程可以访问的资源
 
 **章节来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L67-L88)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L67-L88)
 
 ## 权限控制系统
 
@@ -105,7 +105,7 @@ I --> J[执行沙箱代码]
 ```
 
 **图表来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L42-L63)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L42-L63)
 
 ### 默认权限策略
 
@@ -118,7 +118,7 @@ I --> J[执行沙箱代码]
 - **FFI**：默认完全禁用
 
 **章节来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L177-L196)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L177-L196)
 
 ## 资源限制机制
 
@@ -146,7 +146,7 @@ end
 ```
 
 **图表来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L296-L336)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L296-L336)
 
 ### 内存限制机制
 
@@ -157,7 +157,7 @@ end
 3. **强制回收**：超过限制时触发垃圾回收机制
 
 **章节来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L227-L228)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L227-L228)
 
 ## 工具调用API安全
 
@@ -193,8 +193,8 @@ G --> H
 ```
 
 **图表来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L9-L124)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L1-L86)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L9-L124)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L1-L86)
 
 ### 用户权限验证
 
@@ -205,7 +205,7 @@ G --> H
 3. **权限继承**：系统工具对所有用户可见但受权限控制
 
 **章节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/tool.py#L27-L31)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/tool.py#L27-L31)
 
 ### 代码执行流程
 
@@ -228,10 +228,10 @@ API->>User : 响应执行状态
 ```
 
 **图表来源**
-- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/codeact_agent.py#L100-L136)
+- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/codeact_agent.py#L100-L136)
 
 **章节来源**
-- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/codeact_agent.py#L100-L136)
+- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/codeact_agent.py#L100-L136)
 
 ## 安全风险与缓解措施
 
@@ -280,7 +280,7 @@ A4 --> B12[日志脱敏]
 4. **审计日志**：记录所有沙箱操作
 
 **章节来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L283-L336)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L283-L336)
 
 ## 最佳实践指南
 
@@ -344,7 +344,7 @@ A4 --> B12[日志脱敏]
    - 定期安全审查
 
 **章节来源**
-- [pyodide.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/sandbox/pyodide.py#L508-L520)
+- [pyodide.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/sandbox/pyodide.py#L508-L520)
 
 ## 总结
 

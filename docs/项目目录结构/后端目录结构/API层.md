@@ -48,10 +48,10 @@ end
 ```
 
 **图示来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L6-L28)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L6-L28)
 
 **本节来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L1-L28)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L1-L28)
 
 ## RESTful路由函数定义
 
@@ -96,11 +96,11 @@ agent --> UnifiedResponseModel : "统一响应"
 ```
 
 **图示来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L13-L101)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py#L4-L26)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L13-L101)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/agent.py#L4-L26)
 
 **本节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L13-L101)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L13-L101)
 
 ### Chat模块路由
 Chat模块实现了与AI助手的实时对话功能，支持流式响应。`/chat`端点使用`@router.post`装饰器定义，能够实时返回AI生成的内容，同时处理历史对话记录和上下文管理。
@@ -126,10 +126,10 @@ Note over 前端,ChatAPI : 支持实时前端交互的流式对话
 ```
 
 **图示来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L20-L122)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L20-L122)
 
 **本节来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L20-L122)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L20-L122)
 
 ### Tool模块路由
 Tool模块提供了工具管理功能，包括创建、查询、更新和删除工具等操作。路由函数通过`Depends(get_login_user)`实现依赖注入，确保只有授权用户才能执行相关操作。
@@ -147,10 +147,10 @@ style ReturnSuccess fill:#bbf,stroke:#333
 ```
 
 **图示来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L10-L86)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L10-L86)
 
 **本节来源**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py#L10-L86)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py#L10-L86)
 
 ## JWT认证机制
 
@@ -188,12 +188,12 @@ UserPayload --> UserService : "用户信息"
 ```
 
 **图示来源**
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py#L1-L7)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L23-L157)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/JWT.py#L1-L7)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L23-L157)
 
 **本节来源**
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py#L1-L7)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L114-L157)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/JWT.py#L1-L7)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L114-L157)
 
 ### 认证流程
 系统的认证流程通过`get_login_user`依赖函数实现。该函数首先检查请求是否在白名单中，如果是则直接返回管理员用户；否则执行JWT验证，解析令牌中的用户信息。
@@ -218,10 +218,10 @@ API-->>客户端 : 返回响应
 ```
 
 **图示来源**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L114-L129)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L114-L129)
 
 **本节来源**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L114-L129)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L114-L129)
 
 ## 请求响应模型与数据校验
 
@@ -259,12 +259,12 @@ resp_500 --> UnifiedResponseModel : "返回"
 ```
 
 **图示来源**
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py#L1-L28)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chat.py#L6-L10)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py#L5-L10)
+- [schemas.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/schemas.py#L1-L28)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/chat.py#L6-L10)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/tool.py#L5-L10)
 
 **本节来源**
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py#L1-L28)
+- [schemas.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/schemas.py#L1-L28)
 
 ### 数据校验机制
 Pydantic模型通过字段注解和验证器实现数据校验。系统在`schema`目录中定义了各种请求模型，如`CreateAgentRequest`、`UpdateAgentRequest`等，每个字段都指定了类型、约束和描述信息。
@@ -283,12 +283,12 @@ style Error fill:#f66,stroke:#333
 ```
 
 **图示来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py#L4-L26)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chat.py#L6-L10)
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py#L5-L10)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/agent.py#L4-L26)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/chat.py#L6-L10)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/tool.py#L5-L10)
 
 **本节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py#L4-L26)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/agent.py#L4-L26)
 
 ## API调用流程示例
 
@@ -316,10 +316,10 @@ end
 ```
 
 **图示来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L16-L37)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L16-L37)
 
 **本节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L16-L37)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L16-L37)
 
 ### 发送对话请求
 发送对话请求的API支持流式响应，能够实时返回AI生成的内容。系统会整合用户输入、附件URL和历史上下文，生成完整的对话消息。
@@ -344,10 +344,10 @@ ChatAPI-->>前端 : 连接关闭
 ```
 
 **图示来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49-L122)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49-L122)
 
 **本节来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49-L122)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49-L122)
 
 ## 错误码体系
 
@@ -379,10 +379,10 @@ NotFoundError --> BaseErrorCode : "继承"
 ```
 
 **图示来源**
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/errcode/base.py#L6-L28)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/errcode/base.py#L6-L28)
 
 **本节来源**
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/errcode/base.py#L6-L28)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/errcode/base.py#L6-L28)
 
 ### 错误处理流程
 API端点通过try-catch机制捕获异常，并使用统一的错误响应函数返回标准化的错误信息。这种设计使得前端可以统一处理各种错误情况。
@@ -403,8 +403,8 @@ style Catch fill:#f99,stroke:#333
 ```
 
 **本节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L19-L40)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L101-L116)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L19-L40)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L101-L116)
 
 ## 新增API端点指南
 
@@ -431,7 +431,7 @@ style new_feature fill:#ff0,stroke:#333
 ```
 
 **本节来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L2-L28)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L2-L28)
 
 ### 路由注册
 新增模块需要在`router.py`文件中导入并注册到主路由器。系统使用`APIRouter`的`include_router`方法将模块路由包含到主应用中。
@@ -444,7 +444,7 @@ router.include_router(new_feature.router)
 ```
 
 **本节来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L8-L28)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L8-L28)
 
 ### 安全性考虑
 所有API端点都应考虑安全性，使用JWT认证保护敏感操作。通过`Depends(get_login_user)`依赖注入获取当前登录用户信息，并验证用户权限。
@@ -464,5 +464,5 @@ async def new_endpoint(
 ```
 
 **本节来源**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L114-L129)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L18-L19)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L114-L129)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L18-L19)

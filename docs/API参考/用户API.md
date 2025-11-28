@@ -45,22 +45,22 @@ user_api --> schemas
 ```
 
 **图示来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/user.py)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/utils/JWT.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/user.py)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/utils/JWT.py)
 
 **本节来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py)
 
 ## 核心组件
 用户管理API的核心组件包括用户注册、登录、信息更新和获取等功能。API使用JWT进行身份验证，并通过Redis存储会话信息。密码使用SHA-256算法加密存储，确保用户信息安全。
 
 **本节来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py)
 
 ## 架构概述
 用户API采用分层架构设计，包括API路由层、服务层、数据访问层和模型层。API层处理HTTP请求和响应，服务层包含业务逻辑，DAO层负责数据库操作，模型层定义数据结构。
@@ -83,9 +83,9 @@ style Redis fill:#9ff,stroke:#333
 ```
 
 **图示来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/user.py)
 
 ## 详细组件分析
 
@@ -118,8 +118,8 @@ style Success fill:#6f6,stroke:#333,color:#fff
 ```
 
 **图示来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L21-L48)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L44-L60)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L21-L48)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L44-L60)
 
 ### 用户登录分析
 用户登录端点验证用户凭据，生成JWT令牌，并设置相应的cookie。
@@ -150,9 +150,9 @@ Note over Client,Redis : 用户成功认证
 ```
 
 **图示来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L51-L78)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py#L146-L157)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/utils/JWT.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L51-L78)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py#L146-L157)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/utils/JWT.py)
 
 ### 用户信息管理分析
 用户信息管理功能允许更新和获取用户信息，包括头像和描述。
@@ -185,8 +185,8 @@ UserService --> UserDao : "依赖"
 ```
 
 **图示来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/user.py)
 
 ## 依赖分析
 用户API依赖于多个内部和外部组件，形成了清晰的依赖关系链。
@@ -210,16 +210,16 @@ style user_model fill:#9f9,stroke:#333
 ```
 
 **图示来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/dao/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/dao/user.py)
 
 ## 性能考虑
 用户API在设计时考虑了性能因素，包括使用Redis缓存会话信息、批量获取头像资源和高效的数据库查询。JWT令牌的有效期设置为24小时（86400秒），平衡了安全性和用户体验。
 
 **本节来源**  
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/utils/JWT.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/utils/JWT.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
 
 ## 故障排除指南
 以下是用户API常见问题及解决方案：
@@ -254,8 +254,8 @@ style Solution4 fill:#ff6,stroke:#333
 ```
 
 **本节来源**  
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/errcode/user.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/errcode/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
 
 ## 结论
 AgentChat的用户管理API提供了完整的用户生命周期管理功能，包括注册、登录、信息更新和安全认证。系统采用JWT进行身份验证，通过Redis管理会话，并实现了完善的错误处理机制。API设计遵循RESTful原则，具有良好的可扩展性和安全性。

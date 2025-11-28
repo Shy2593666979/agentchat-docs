@@ -35,9 +35,9 @@ J --> L[RAG配置]
 ```
 
 **图表来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L1-L84)
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L1-L199)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L76-L98)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L1-L84)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L1-L199)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L76-L98)
 
 ## 核心配置类分析
 
@@ -78,10 +78,10 @@ ESIndex --> Mappings : "包含"
 ```
 
 **图表来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L1-L84)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L1-L84)
 
 **章节来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L1-L84)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L1-L84)
 
 ### 字段映射分析
 
@@ -98,7 +98,7 @@ ESIndex类定义了完整的字段映射结构：
 | update_time | date | - | 更新时间戳 |
 
 **章节来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L56-L80)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L56-L80)
 
 ## Elasticsearch客户端架构
 
@@ -144,12 +144,12 @@ ESClient --> SearchModel : "返回"
 ```
 
 **图表来源**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L12-L199)
-- [chunk.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chunk.py#L1-L20)
-- [search.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/search.py#L1-L23)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L12-L199)
+- [chunk.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/chunk.py#L1-L20)
+- [search.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/search.py#L1-L23)
 
 **章节来源**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L12-L199)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L12-L199)
 
 ### 客户端初始化流程
 
@@ -168,8 +168,8 @@ Note over App,Config : 客户端就绪，可执行操作
 ```
 
 **图表来源**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L13-L14)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L91-L91)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L13-L14)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L91-L91)
 
 ## 索引配置详解
 
@@ -194,7 +194,7 @@ I --> J
 ```
 
 **图表来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L44-L54)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L44-L54)
 
 ### 动态模板设置
 
@@ -209,7 +209,7 @@ I --> J
 | update_time | type: date | 时间范围查询 |
 
 **章节来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L44-L83)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L44-L83)
 
 ## 查询操作分析
 
@@ -236,8 +236,8 @@ M --> N[返回结果]
 ```
 
 **图表来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L10-L25)
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L27-L42)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L10-L25)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L27-L42)
 
 ### 查询参数详解
 
@@ -251,7 +251,7 @@ M --> N[返回结果]
 | boost | 2.0 | 权重提升因子 |
 
 **章节来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L10-L42)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L10-L42)
 
 ### 删除操作实现
 
@@ -268,10 +268,10 @@ ESClient->>Client : 返回删除成功
 ```
 
 **图表来源**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L86-L94)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L86-L94)
 
 **章节来源**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L86-L94)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L86-L94)
 
 ## RAG系统中的角色
 
@@ -295,7 +295,7 @@ J --> K[最终结果]
 ```
 
 **图表来源**
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L26-L51)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L26-L51)
 
 ### RAG处理器集成
 
@@ -309,8 +309,8 @@ RagHandler类展示了Elasticsearch在RAG流程中的具体应用：
 | 删除清理 | 批量删除文档 | `delete_documents()` |
 
 **章节来源**
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L17-L24)
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L26-L51)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L17-L24)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L26-L51)
 
 ## 性能调优建议
 
@@ -347,8 +347,8 @@ G[异步操作] --> D
 | 分页查询 | scroll API | 大数据集处理 |
 
 **章节来源**
-- [es_index.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/es_index.py#L11-L12)
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L43-L43)
+- [es_index.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/es_index.py#L11-L12)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L43-L43)
 
 ## 故障排除指南
 
@@ -383,8 +383,8 @@ ESClient类实现了完善的错误处理：
 | 数据插入失败 | 异常记录 | ERROR |
 
 **章节来源**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L22-L37)
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L47-L61)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L22-L37)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L47-L61)
 
 ### 配置验证
 
@@ -405,8 +405,8 @@ ESClient->>Settings : 配置验证结果
 ```
 
 **图表来源**
-- [settings.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/settings.py#L26-L61)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L79-L80)
+- [settings.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/settings.py#L26-L61)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L79-L80)
 
 ## 总结
 

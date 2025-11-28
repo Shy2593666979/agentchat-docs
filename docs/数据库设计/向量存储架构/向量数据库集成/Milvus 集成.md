@@ -15,8 +15,8 @@
 Milvus向量数据库集成是本项目中用于向量存储和检索的关键组件。通过`MilvusDB`类实现了`VectorStoreBase`抽象基类，提供了完整的向量数据库操作功能。该集成支持Milvus独立部署模式和轻量级模式，通过配置文件中的mode参数进行切换。
 
 **Section sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L1-L262)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L93-L98)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L1-L262)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L93-L98)
 
 ## MilvusDB类实现
 
@@ -75,12 +75,12 @@ MilvusDB --> OutputData : "返回"
 ```
 
 **Diagram sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L39-L262)
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L39-L262)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
 
 **Section sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L39-L262)
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L39-L262)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
 
 ## 与ChromaDB的差异
 
@@ -114,12 +114,12 @@ style B fill:#bbf,stroke:#333
 ```
 
 **Diagram sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L40-L48)
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L31)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L40-L48)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L31)
 
 **Section sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L40-L48)
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L31)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L40-L48)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L31)
 
 ## 集合创建与索引配置
 
@@ -150,11 +150,11 @@ MilvusDB-->>User : 初始化完成
 ```
 
 **Diagram sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L69-L98)
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L62-L67)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L69-L98)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L62-L67)
 
 **Section sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L69-L98)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L69-L98)
 
 ## 相似度度量类型
 
@@ -186,11 +186,11 @@ end note
 ```
 
 **Diagram sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L25-L38)
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L46-L47)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L25-L38)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L46-L47)
 
 **Section sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L25-L38)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L25-L38)
 
 ## 元数据存储机制
 
@@ -232,11 +232,11 @@ end note
 ```
 
 **Diagram sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L87-L90)
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L111-L127)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L87-L90)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L111-L127)
 
 **Section sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L87-L90)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L87-L90)
 
 ## 配置启用方式
 
@@ -276,12 +276,12 @@ end note
 ```
 
 **Diagram sources**
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L94-L97)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/vector_db/__init__.py#L7-L12)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L94-L97)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/vector_db/__init__.py#L7-L12)
 
 **Section sources**
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L94-L97)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/vector_db/__init__.py#L7-L12)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L94-L97)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/vector_db/__init__.py#L7-L12)
 
 ## 核心功能方法
 
@@ -313,7 +313,7 @@ style H fill:#ff9,stroke:#333
 ```
 
 **Diagram sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L99-L261)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L99-L261)
 
 **Section sources**
-- [milvus.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/milvus.py#L99-L261)
+- [milvus.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/milvus.py#L99-L261)

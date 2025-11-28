@@ -43,13 +43,13 @@ SET --> VSM
 ```
 
 **图表来源**
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L23-L255)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/__init__.py#L4-L14)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L23-L255)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/__init__.py#L4-L14)
 
 **章节来源**
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py#L1-L59)
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L1-L255)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/base.py#L1-L59)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L1-L255)
 
 ## 核心组件
 
@@ -121,12 +121,12 @@ ChromaDB --> OutputData : creates
 ```
 
 **图表来源**
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L23-L255)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/base.py#L4-L58)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L23-L255)
 
 **章节来源**
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py#L1-L59)
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L1-L255)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/base.py#L1-L59)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L1-L255)
 
 ## 架构概览
 
@@ -160,8 +160,8 @@ CHROMA --> REMOTE
 ```
 
 **图表来源**
-- [client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/client.py#L118-L130)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/__init__.py#L4-L14)
+- [client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/client.py#L118-L130)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/__init__.py#L4-L14)
 
 ## 详细组件分析
 
@@ -191,7 +191,7 @@ CREATE_COLLECTION --> END([初始化完成])
 ```
 
 **图表来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L61)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L61)
 
 #### 2. 远程服务器连接
 
@@ -226,7 +226,7 @@ ChromaDB-->>Client : 返回集合实例
 ```
 
 **图表来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L96-L111)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L96-L111)
 
 #### 集合操作方法
 
@@ -255,7 +255,7 @@ ERROR --> END
 ```
 
 **图表来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L113-L128)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L113-L128)
 
 #### search 方法
 
@@ -277,7 +277,7 @@ ChromaDB-->>Client : 返回搜索结果
 ```
 
 **图表来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L130-L148)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L130-L148)
 
 #### 元数据处理
 
@@ -308,7 +308,7 @@ CONFIG_TELEMETRY --> CREATE_CLIENT[创建客户端实例]
 ```
 
 **图表来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L45-L57)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L45-L57)
 
 ### 相似度搜索实现
 
@@ -331,10 +331,10 @@ RETURN_FILTER --> END
 ```
 
 **图表来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L233-L255)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L233-L255)
 
 **章节来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L255)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L24-L255)
 
 ## 依赖关系分析
 
@@ -360,8 +360,8 @@ SETTINGS --> MANAGER
 ```
 
 **图表来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L1-L12)
-- [base.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/base.py#L1-L3)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L1-L12)
+- [base.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/base.py#L1-L3)
 
 ### 配置依赖
 
@@ -374,9 +374,9 @@ SETTINGS --> MANAGER
 | 向量存储 | VectorStoreManager | get_chroma_vector() |
 
 **章节来源**
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L112-L112)
-- [settings.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/settings.py#L17-L17)
-- [__init__.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/__init__.py#L6-L10)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L112-L112)
+- [settings.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/settings.py#L17-L17)
+- [__init__.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/__init__.py#L6-L10)
 
 ## 性能考虑
 
@@ -435,7 +435,7 @@ pip install chromadb
 - 监控向量存储大小
 
 **章节来源**
-- [chroma.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/memory/vector_stores/chroma.py#L6-L10)
+- [chroma.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/memory/vector_stores/chroma.py#L6-L10)
 
 ## 结论
 

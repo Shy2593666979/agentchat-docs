@@ -70,12 +70,12 @@ KnowledgeService --> KnowledgeDAO
 ```
 
 **图表来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L1-L28)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L1-L101)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L1-L28)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L1-L101)
 
 **章节来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L1-L28)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L1-L101)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L1-L28)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L1-L101)
 
 ## 核心端点详解
 
@@ -195,8 +195,8 @@ KnowledgeService --> KnowledgeDAO
 **响应**: 符合条件的Agent列表
 
 **章节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L16-L101)
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py#L13-L28)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L16-L101)
+- [schemas.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/schemas.py#L13-L28)
 
 ## Agent配置模型
 
@@ -262,8 +262,8 @@ Agent更新请求的数据结构：
 - **应用场景**: 长对话、个性化服务、上下文理解
 
 **章节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py#L4-L26)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/agent.py#L11-L22)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/agent.py#L4-L26)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/agent.py#L11-L22)
 
 ## Agent执行与调试
 
@@ -293,7 +293,7 @@ Note over Client,Tools : 实时显示Agent执行过程
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L230-L278)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L230-L278)
 
 ### 执行状态类型
 
@@ -318,7 +318,7 @@ Agent执行过程中会返回多种状态类型：
 - **工具调用次数**: 工具被调用的总次数
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L230-L278)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L230-L278)
 
 ## 错误处理机制
 
@@ -418,8 +418,8 @@ async def create_agent(agent_request: CreateAgentRequest):
 ```
 
 **章节来源**
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py#L19-L28)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L16-L101)
+- [schemas.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/schemas.py#L19-L28)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L16-L101)
 
 ## 完整示例
 
@@ -530,8 +530,8 @@ async def create_agent(agent_request: CreateAgentRequest):
 ```
 
 **章节来源**
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts#L4-L27)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L16-L101)
+- [agent.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/agent.ts#L4-L27)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L16-L101)
 
 ## 最佳实践
 
@@ -629,5 +629,5 @@ curl -X GET "http://tool-service/ping"
 ```
 
 **章节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/agent.py#L11-L143)
-- [settings.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/settings.py#L1-L62)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/agent.py#L11-L143)
+- [settings.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/settings.py#L1-L62)

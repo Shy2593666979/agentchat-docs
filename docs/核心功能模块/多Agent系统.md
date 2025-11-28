@@ -72,8 +72,8 @@ AS --> DB
 ```
 
 **图表来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/agent.py#L1-L143)
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/models/manager.py#L1-L63)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/agent.py#L1-L143)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/models/manager.py#L1-L63)
 
 ### Agent抽象层设计
 
@@ -125,10 +125,10 @@ AgentBase <|-- MCPAgent
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L39-L279)
-- [plan_execute_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/plan_execute_agent.py#L18-L238)
-- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/codeact_agent.py#L57-L226)
-- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/mcp_agent.py#L26-L115)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L39-L279)
+- [plan_execute_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/plan_execute_agent.py#L18-L238)
+- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/codeact_agent.py#L57-L226)
+- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/mcp_agent.py#L26-L115)
 
 ## Agent类型与实现
 
@@ -153,10 +153,10 @@ ToolResult --> CallTool
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
 
 **节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L1-L279)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L1-L279)
 
 ### Plan-Execute Agent（计划执行）
 
@@ -186,10 +186,10 @@ Agent-->>User : 返回最终响应
 ```
 
 **图表来源**
-- [plan_execute_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/plan_execute_agent.py#L95-L157)
+- [plan_execute_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/plan_execute_agent.py#L95-L157)
 
 **节来源**
-- [plan_execute_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/plan_execute_agent.py#L1-L238)
+- [plan_execute_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/plan_execute_agent.py#L1-L238)
 
 ### CodeAct Agent（代码行动）
 
@@ -206,7 +206,7 @@ CodeAct Agent专注于代码生成和执行，特别适用于编程任务：
   - 上下文变量管理
 
 **节来源**
-- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/codeact_agent.py#L1-L226)
+- [codeact_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/codeact_agent.py#L1-L226)
 
 ### MCP Agent（模型上下文协议）
 
@@ -218,7 +218,7 @@ MCP Agent专门处理Model Context Protocol服务：
   - 实时事件流式传输
 
 **节来源**
-- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/mcp_agent.py#L1-L115)
+- [mcp_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/mcp_agent.py#L1-L115)
 
 ### Structured Response Agent（结构化响应）
 
@@ -230,7 +230,7 @@ MCP Agent专门处理Model Context Protocol服务：
   - 与其他Agent的组合使用
 
 **节来源**
-- [structured_response_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/structured_response_agent.py#L1-L21)
+- [structured_response_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/structured_response_agent.py#L1-L21)
 
 ## Agent生命周期管理
 
@@ -257,8 +257,8 @@ API-->>Frontend : 响应创建状态
 ```
 
 **图表来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/agent.py#L11-L22)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L16-L37)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/agent.py#L11-L22)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L16-L37)
 
 ### 配置管理
 
@@ -277,8 +277,8 @@ Agent配置包括以下关键要素：
 | logo_url | str | Logo图片URL | 默认值 |
 
 **节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py#L1-L26)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/agent.py#L1-L47)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/agent.py#L1-L26)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/agent.py#L1-L47)
 
 ### 状态管理
 
@@ -305,7 +305,7 @@ Turn --> Tool
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L30-L35)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L30-L35)
 
 ## 工具集成与绑定
 
@@ -362,10 +362,10 @@ Manager-->>Agent : 返回最终结果
 ```
 
 **图表来源**
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/manager.py#L27-L30)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/manager.py#L27-L30)
 
 **节来源**
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/manager.py#L1-L103)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/manager.py#L1-L103)
 
 ### 工具绑定机制
 
@@ -444,7 +444,7 @@ Agent相关的API接口遵循RESTful设计原则：
 | `/api/v1/agent/search` | POST | 搜索Agent | name |
 
 **节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L1-L101)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L1-L101)
 
 ### 前端组件架构
 
@@ -473,10 +473,10 @@ Edit --> Save
 ```
 
 **图表来源**
-- [agent.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/agent/agent.vue#L1-L800)
+- [agent.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/agent/agent.vue#L1-L800)
 
 **节来源**
-- [agent.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/agent.ts#L1-L163)
+- [agent.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/agent.ts#L1-L163)
 
 ### 流式响应处理
 
@@ -548,7 +548,7 @@ USER ||--o{ AGENT : "owns"
 ```
 
 **图表来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/agent.py#L11-L47)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/agent.py#L11-L47)
 
 ### 数据关联关系
 
@@ -560,7 +560,7 @@ USER ||--o{ AGENT : "owns"
 - **Agent-知识库关系**：多对多，Agent可以从多个知识库获取信息
 
 **节来源**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/database/models/agent.py#L1-L47)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/database/models/agent.py#L1-L47)
 
 ## 性能优化与故障排除
 
@@ -618,7 +618,7 @@ Batch --> Timeout
 4. 测试独立功能模块
 
 **节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L270-L279)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L270-L279)
 
 ### 监控与调试
 

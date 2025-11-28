@@ -56,12 +56,12 @@ AgentService --> Database
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L39-L80)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L103-L170)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L39-L80)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L103-L170)
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L1-L50)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L1-L50)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L1-L50)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L1-L50)
 
 ## 核心组件分析
 
@@ -102,8 +102,8 @@ ReactAgent --> StreamOutput : "生成"
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L31-L57)
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L24-L35)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L31-L57)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L24-L35)
 
 ### 状态类型优化
 
@@ -116,7 +116,7 @@ ReactAgentState继承自MessagesState，通过类型注解增强了类型安全�
 这种设计使得状态管理更加清晰，同时提供了良好的类型检查支持。
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L31-L35)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L31-L35)
 
 ## ReactAgentState状态管理
 
@@ -138,7 +138,7 @@ note left of execute_tool_node : 执行选定工具<br/>处理工具结果<br/>�
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
 
 ### 状态流转机制
 
@@ -151,7 +151,7 @@ note left of execute_tool_node : 执行选定工具<br/>处理工具结果<br/>�
 5. **结束阶段**: 返回最终结果或终止流程
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
 
 ## LangGraph状态机实现
 
@@ -175,7 +175,7 @@ end
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L88-L94)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L88-L94)
 
 ### _setup_react_graph()方法详解
 
@@ -192,7 +192,7 @@ end
 - **execute_tool_node → call_tool_node**: 工具执行完成后回到决策阶段
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L82-L96)
 
 ### _should_continue()条件边逻辑
 
@@ -209,7 +209,7 @@ ReturnEnd --> End
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L100-L108)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L100-L108)
 
 这个条件判断逻辑的关键在于：
 1. 检查最后一条消息是否包含tool_calls
@@ -217,7 +217,7 @@ ReturnEnd --> End
 3. 如果没有工具调用，直接结束流程
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L100-L108)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L100-L108)
 
 ## 流式输出机制
 
@@ -248,7 +248,7 @@ ReactAgent-->>Client : 完成
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L230-L279)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L230-L279)
 
 ### 流式事件类型
 
@@ -260,7 +260,7 @@ ReactAgent-->>Client : 完成
 每种事件都包含统一的时间戳结构，便于客户端处理和显示。
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L24-L35)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L24-L35)
 
 ### 错误处理与兜底机制
 
@@ -271,7 +271,7 @@ ReactAgent-->>Client : 完成
 - **用户友好**: 提供友好的错误提示，避免暴露技术细节
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L269-L278)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L269-L278)
 
 ## 工具集成与执行
 
@@ -299,7 +299,7 @@ ReturnState --> End([结束])
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L110-L153)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L110-L153)
 
 ### _execute_tool_node节点实现
 
@@ -336,7 +336,7 @@ ReturnState --> End([结束])
 ```
 
 **图表来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L155-L226)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L155-L226)
 
 ### 工具执行的错误处理
 
@@ -349,7 +349,7 @@ ReturnState --> End([结束])
 5. **状态恢复**: 即使出现错误，也能保证状态的一致性
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L155-L226)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L155-L226)
 
 ## 配置与集成
 
@@ -384,8 +384,8 @@ AgentConfig --> StreamingAgent : "配置"
 ```
 
 **图表来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L33-L42)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L103-L170)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L33-L42)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L103-L170)
 
 ### setup_react_agent()方法
 
@@ -397,7 +397,7 @@ AgentConfig --> StreamingAgent : "配置"
 4. **状态管理**: 配置流式状态schema
 
 **章节来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L162-L168)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L162-L168)
 
 ### 工作区代理集成
 
@@ -414,8 +414,8 @@ ReAct智能体在不同工作区代理中的应用展示了其通用性和灵活
 - **特殊功能**: 知识库检索、会话管理
 
 **章节来源**
-- [simple_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/workspace/simple_agent.py#L101-L106)
-- [wechat_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/workspace/wechat_agent.py#L104-L109)
+- [simple_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/workspace/simple_agent.py#L101-L106)
+- [wechat_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/workspace/wechat_agent.py#L104-L109)
 
 ## 最佳实践指南
 
@@ -447,8 +447,8 @@ ReAct智能体在不同工作区代理中的应用展示了其通用性和灵活
 4. **缓存策略**: 对频繁访问的数据实施缓存
 
 **章节来源**
-- [react_agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/core/agents/react_agent.py#L68-L71)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L140-L148)
+- [react_agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/core/agents/react_agent.py#L68-L71)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L140-L148)
 
 ## 总结
 

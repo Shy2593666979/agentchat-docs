@@ -15,8 +15,8 @@
 RAG（Retrieval-Augmented Generation）服务是AgentChat系统中的核心组件，负责将外部知识库与大语言模型相结合，实现基于知识库的增强式问答。该服务通过协调文档解析、向量化、检索与重排序等环节，为用户提供准确、可靠的回答。系统采用混合检索策略，结合Elasticsearch的关键词搜索和Milvus的向量语义搜索，通过重排序算法提升检索结果的相关性。
 
 **Section sources**
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L1-L152)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L1-L50)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L1-L152)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L1-L50)
 
 ## 核心工作流程
 
@@ -44,12 +44,12 @@ RagHandler->>User : 返回最终答案
 ```
 
 **Diagram sources **
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L12-L148)
-- [retrieval.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/retrieval.py#L5-L46)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L12-L148)
+- [retrieval.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/retrieval.py#L5-L46)
 
 **Section sources**
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L12-L148)
-- [retrieval.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/retrieval.py#L5-L46)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L12-L148)
+- [retrieval.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/retrieval.py#L5-L46)
 
 ## 文档解析与分块
 
@@ -72,38 +72,38 @@ I --> J[生成文档块]
 ```
 
 **Diagram sources **
-- [parser.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/parser.py#L13-L58)
-- [doc_parser/pdf.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/pdf.py#L18-L80)
-- [doc_parser/docx.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/docx.py#L5-L17)
-- [doc_parser/markdown.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/markdown.py#L8-L252)
-- [doc_parser/text.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/text.py#L8-L86)
+- [parser.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/parser.py#L13-L58)
+- [doc_parser/pdf.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/pdf.py#L18-L80)
+- [doc_parser/docx.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/docx.py#L5-L17)
+- [doc_parser/markdown.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/markdown.py#L8-L252)
+- [doc_parser/text.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/text.py#L8-L86)
 
 **Section sources**
-- [parser.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/parser.py#L13-L58)
-- [doc_parser/pdf.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/pdf.py#L18-L80)
-- [doc_parser/docx.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/docx.py#L5-L17)
+- [parser.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/parser.py#L13-L58)
+- [doc_parser/pdf.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/pdf.py#L18-L80)
+- [doc_parser/docx.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/docx.py#L5-L17)
 
 ### PDF文档解析
 
 PDF文档解析采用`pymupdf4llm`库将PDF转换为Markdown格式，同时提取文档中的图片并上传至阿里云OSS。在转换过程中，系统会保持文档的原始布局和格式，确保转换后的Markdown文件能够准确反映原始PDF的内容结构。转换完成后，系统会调用`markdown_parser`对Markdown文件进行进一步的分块处理。
 
 **Section sources**
-- [doc_parser/pdf.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/pdf.py#L18-L80)
+- [doc_parser/pdf.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/pdf.py#L18-L80)
 
 ### DOCX文档解析
 
 DOCX文档解析通过先将文档转换为PDF格式，然后复用PDF解析流程来实现。这种设计避免了重复开发文档解析逻辑，提高了代码的复用性。系统调用`convert_to_pdf`函数将DOCX文件转换为PDF，然后交由`pdf_parser`进行后续处理。这种方式确保了不同格式文档在处理流程上的一致性。
 
 **Section sources**
-- [doc_parser/docx.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/docx.py#L5-L17)
+- [doc_parser/docx.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/docx.py#L5-L17)
 
 ### 文本与Markdown分块
 
 文本和Markdown文档的分块策略有所不同。对于纯文本文件，系统采用基于换行符的分块方法，确保每个块的大小不超过配置的`chunk_size`，同时保留`overlap_size`的重叠部分以维持上下文连贯性。对于Markdown文件，系统会解析文档的标题结构，将每个标题下的内容作为一个逻辑单元进行分块，并在每个块中包含完整的标题路径，以保持文档的层次结构信息。
 
 **Section sources**
-- [doc_parser/text.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/text.py#L8-L86)
-- [doc_parser/markdown.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/markdown.py#L8-L252)
+- [doc_parser/text.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/text.py#L8-L86)
+- [doc_parser/markdown.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/markdown.py#L8-L252)
 
 ## 向量化与嵌入模型
 
@@ -124,11 +124,11 @@ I --> J[向量表示]
 ```
 
 **Diagram sources **
-- [embedding.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/embedding.py#L11-L43)
+- [embedding.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/embedding.py#L11-L43)
 
 **Section sources**
-- [embedding.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/embedding.py#L11-L43)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L1-L50)
+- [embedding.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/embedding.py#L11-L43)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L1-L50)
 
 ## Elasticsearch语义搜索
 
@@ -172,14 +172,14 @@ ESClient --> SearchModel : "返回"
 ```
 
 **Diagram sources **
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L12-L199)
-- [chunk.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chunk.py#L1-L20)
-- [search.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/search.py#L2-L23)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L12-L199)
+- [chunk.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/chunk.py#L1-L20)
+- [search.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/search.py#L2-L23)
 
 **Section sources**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L12-L199)
-- [chunk.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chunk.py#L1-L20)
-- [search.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/search.py#L2-L23)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L12-L199)
+- [chunk.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/chunk.py#L1-L20)
+- [search.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/search.py#L2-L23)
 
 ## 文档重排序机制
 
@@ -197,11 +197,11 @@ Reranker->>RagHandler : 返回重排序后的文档列表
 ```
 
 **Diagram sources **
-- [rerank.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/rerank.py#L9-L52)
+- [rerank.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/rerank.py#L9-L52)
 
 **Section sources**
-- [rerank.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/rerank.py#L9-L52)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L1-L50)
+- [rerank.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/rerank.py#L9-L52)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L1-L50)
 
 ## 知识库增强回答链路
 
@@ -219,11 +219,11 @@ G --> H[返回给用户]
 ```
 
 **Diagram sources **
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L54-L145)
-- [retrieval.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/retrieval.py#L37-L46)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L54-L145)
+- [retrieval.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/retrieval.py#L37-L46)
 
 **Section sources**
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L54-L145)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L54-L145)
 
 ## RAG优化建议
 
@@ -232,22 +232,22 @@ G --> H[返回给用户]
 合理的分块策略对RAG系统性能至关重要。对于技术文档和学术论文，建议采用较小的分块大小（256-512字符）以保持内容的精确性；对于小说和长篇文章，可以采用较大的分块大小（512-1024字符）以保持上下文连贯性。同时，应设置适当的重叠大小（128字符左右）以避免关键信息被切割。
 
 **Section sources**
-- [doc_parser/markdown.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/markdown.py#L9-L12)
-- [doc_parser/text.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/doc_parser/text.py#L10-L11)
+- [doc_parser/markdown.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/markdown.py#L9-L12)
+- [doc_parser/text.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/doc_parser/text.py#L10-L11)
 
 ### 嵌入模型选择
 
 嵌入模型的选择直接影响检索质量。对于中文场景，应优先选择在中文语料上训练过的嵌入模型。同时，需要考虑模型的维度和性能平衡，过高的维度会增加存储和计算成本，而过低的维度可能无法充分表达语义信息。建议通过A/B测试选择最适合业务场景的嵌入模型。
 
 **Section sources**
-- [embedding.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/embedding.py#L7-L9)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L1-L50)
+- [embedding.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/embedding.py#L7-L9)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L1-L50)
 
 ### 检索性能调优
 
 检索性能调优可以从多个方面入手。首先，合理配置Elasticsearch和Milvus的索引参数，如分片数、副本数等。其次，优化查询重写策略，避免生成过多无关的查询变体。最后，通过缓存机制减少重复查询的处理时间，特别是对于高频查询可以设置专门的缓存策略。
 
 **Section sources**
-- [es_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/es_client.py#L14-L19)
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L28-L34)
-- [config.yaml](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config.yaml#L1-L50)
+- [es_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/es_client.py#L14-L19)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L28-L34)
+- [config.yaml](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config.yaml#L1-L50)

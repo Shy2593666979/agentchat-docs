@@ -50,9 +50,9 @@ end
 ```
 
 **图表来源**
-- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/agentCard.vue#L1-L50)
-- [drawer.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/drawer/drawer.vue#L1-L50)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L1-L50)
+- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/agentCard/agentCard.vue#L1-L50)
+- [drawer.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/drawer/drawer.vue#L1-L50)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L1-L50)
 
 ## 核心通用组件
 
@@ -121,8 +121,8 @@ const emits = defineEmits<{
 ```
 
 **章节来源**
-- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/agentCard.vue#L8-L15)
-- [type.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/type.ts#L103-L118)
+- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/agentCard/agentCard.vue#L8-L15)
+- [type.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/type.ts#L103-L118)
 
 ### commonCard组件
 
@@ -157,8 +157,8 @@ interface CommonCardProps {
 ```
 
 **章节来源**
-- [commonCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/commonCard/commonCard.vue#L4-L9)
-- [histortCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/historyCard/histortCard.vue#L205-L236)
+- [commonCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/commonCard/commonCard.vue#L4-L9)
+- [histortCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/historyCard/histortCard.vue#L205-L236)
 
 ### drawer组件
 
@@ -208,7 +208,7 @@ const loadAgents = async () => {
 ```
 
 **章节来源**
-- [drawer.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/drawer/drawer.vue#L13-L49)
+- [drawer.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/drawer/drawer.vue#L13-L49)
 
 ## 复杂表单组件
 
@@ -254,8 +254,8 @@ AgentFormDialog --> CollapseItems
 ```
 
 **图表来源**
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L22-L32)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L35-L43)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L22-L32)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L35-L43)
 
 #### 表单数据管理
 
@@ -348,9 +348,9 @@ const createCustomOverlay = () => {
 ```
 
 **章节来源**
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L22-L32)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L83-L118)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L121-L149)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L22-L32)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L83-L118)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L121-L149)
 
 ### 在agent-editor.vue中的集成示例
 
@@ -379,8 +379,8 @@ const editAgent = (agent: Agent) => {
 ```
 
 **章节来源**
-- [agent-fixed.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/agent/agent-fixed.vue#L10-L18)
-- [agent-fixed.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/pages/agent/agent-fixed.vue#L106-L113)
+- [agent-fixed.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/agent/agent-fixed.vue#L10-L18)
+- [agent-fixed.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/pages/agent/agent-fixed.vue#L106-L113)
 
 ## 组件导出与按需引入
 
@@ -429,9 +429,9 @@ export default {
 - **Bundle分析**：定期分析打包体积，优化组件大小
 
 **章节来源**
-- [agentCard/index.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/index.ts#L1-L4)
-- [drawer/index.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/drawer/index.ts#L1-L5)
-- [AgentFormDialog/index.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/index.ts#L1-L4)
+- [agentCard/index.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/agentCard/index.ts#L1-L4)
+- [drawer/index.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/drawer/index.ts#L1-L5)
+- [AgentFormDialog/index.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/index.ts#L1-L4)
 
 ## 样式隔离与响应式设计
 
@@ -517,8 +517,8 @@ $breakpoint-desktop: 1024px;
 ```
 
 **章节来源**
-- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/agentCard.vue#L99-L311)
-- [histortCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/historyCard/histortCard.vue#L205-L237)
+- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/agentCard/agentCard.vue#L99-L311)
+- [histortCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/historyCard/histortCard.vue#L205-L237)
 
 ## 组件通信机制
 
@@ -582,8 +582,8 @@ provide('agentStore', agentStore)
 ```
 
 **章节来源**
-- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/agentCard.vue#L12-L15)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L10-L12)
+- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/agentCard/agentCard.vue#L12-L15)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L10-L12)
 
 ## 开发规范与最佳实践
 
@@ -653,8 +653,8 @@ const debouncedSearch = debounce((value: string) => {
 ```
 
 **章节来源**
-- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/agentCard.vue#L1-L5)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L1-L5)
+- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/agentCard/agentCard.vue#L1-L5)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L1-L5)
 
 ## 测试建议
 
@@ -742,8 +742,8 @@ describe('Component Performance', () => {
 ```
 
 **章节来源**
-- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/agentCard/agentCard.vue#L33-L47)
-- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L244-L283)
+- [agentCard.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/agentCard/agentCard.vue#L33-L47)
+- [AgentFormDialog.vue](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/components/dialog/create_agent/AgentFormDialog.vue#L244-L283)
 
 ## 总结
 

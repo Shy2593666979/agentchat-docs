@@ -68,9 +68,9 @@ RH --> ES
 ```
 
 **图表来源**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L1-L28)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/knowledge.py#L1-L84)
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/knowledge_file.py#L1-L64)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L1-L28)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/knowledge.py#L1-L84)
+- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/knowledge_file.py#L1-L64)
 
 ## 知识库API
 
@@ -100,8 +100,8 @@ RH --> ES
 - `500`: 数据库操作异常
 
 **章节来源**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py#L14-L23)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/knowledge.ts#L56-L61)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge.py#L14-L23)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/knowledge.ts#L56-L61)
 
 ### 列出知识库
 
@@ -139,8 +139,8 @@ RH --> ES
 | file_size | string | 总文件大小（已格式化） |
 
 **章节来源**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py#L26-L33)
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/knowledge.ts#L48-L52)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge.py#L26-L33)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/knowledge.ts#L48-L52)
 
 ### 更新知识库
 
@@ -159,7 +159,7 @@ RH --> ES
 系统会验证当前用户是否有权限修改指定的知识库。
 
 **章节来源**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py#L36-L49)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge.py#L36-L49)
 
 ### 删除知识库
 
@@ -179,7 +179,7 @@ RH --> ES
 - 从Elasticsearch中删除索引
 
 **章节来源**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py#L52-L63)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge.py#L52-L63)
 
 ### 知识库检索
 
@@ -210,7 +210,7 @@ RH --> ES
 ```
 
 **章节来源**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py#L65-L73)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge.py#L65-L73)
 
 ## 知识文件API
 
@@ -242,7 +242,7 @@ RH --> ES
 ```
 
 **章节来源**
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge_file.py#L15-L37)
+- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge_file.py#L15-L37)
 
 ### 文件列表查询
 
@@ -282,7 +282,7 @@ RH --> ES
 - `✅ 完成`: 解析成功
 
 **章节来源**
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge_file.py#L40-L49)
+- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge_file.py#L40-L49)
 
 ### 文件状态查询
 
@@ -302,7 +302,7 @@ RH --> ES
 - 错误详情（如有）
 
 **章节来源**
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge_file.py#L65-L74)
+- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge_file.py#L65-L74)
 
 ### 文件删除
 
@@ -322,7 +322,7 @@ RH --> ES
 4. 清理OSS存储中的文件
 
 **章节来源**
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge_file.py#L53-L62)
+- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge_file.py#L53-L62)
 
 ## 文件上传处理流程
 
@@ -366,7 +366,7 @@ file: [文件二进制数据]
 ```
 
 **章节来源**
-- [upload.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/upload.py#L12-L27)
+- [upload.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/upload.py#L12-L27)
 
 ### 后台处理流程
 
@@ -394,8 +394,8 @@ API-->>Client : 返回成功响应
 ```
 
 **图表来源**
-- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/knowledge_file.py#L23-L42)
-- [parser.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/parser.py#L16-L37)
+- [knowledge_file.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/knowledge_file.py#L23-L42)
+- [parser.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/parser.py#L16-L37)
 
 ## 向量化和存储
 
@@ -432,8 +432,8 @@ Store --> VectorIndex[建立向量索引]
 ```
 
 **图表来源**
-- [parser.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag/parser.py#L16-L37)
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L18-L24)
+- [parser.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag/parser.py#L16-L37)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L18-L24)
 
 ### 向量数据库配置
 
@@ -457,7 +457,7 @@ Store --> VectorIndex[建立向量索引]
 - **数量限制**: 控制返回结果数量
 
 **章节来源**
-- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/rag_handler.py#L26-L91)
+- [rag_handler.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/rag_handler.py#L26-L91)
 
 ## Agent知识库关联
 
@@ -494,7 +494,7 @@ Chat->>Agent : 包含上下文的回答
 ```
 
 **图表来源**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/services/chat.py#L216-L224)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/services/chat.py#L216-L224)
 
 ### RAG增强问答
 
@@ -517,7 +517,7 @@ agent_config = {
 ```
 
 **章节来源**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py#L65-L73)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge.py#L65-L73)
 
 ## 错误处理和状态管理
 
@@ -561,7 +561,7 @@ async function pollFileStatus(fileId: string) {
 ```
 
 **章节来源**
-- [knowledge-file.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/knowledge-file.ts#L11-L15)
+- [knowledge-file.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/knowledge-file.ts#L11-L15)
 
 ## 前端集成指南
 
@@ -704,8 +704,8 @@ export default {
 ```
 
 **章节来源**
-- [knowledge.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/knowledge.ts#L48-L89)
-- [knowledge-file.ts](https://github.com/Shy2593666979/AgentChat/src/frontend/src/apis/knowledge-file.ts#L42-L55)
+- [knowledge.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/knowledge.ts#L48-L89)
+- [knowledge-file.ts](https://github.com/Shy2593666979/AgentChat/tree/main/src/frontend/src/apis/knowledge-file.ts#L42-L55)
 
 ## 最佳实践
 

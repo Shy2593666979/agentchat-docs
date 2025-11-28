@@ -50,11 +50,11 @@ MCPManager --> MultiServerMCPClient : "使用"
 ```
 
 **图示来源**
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/manager.py#L13-L103)
-- [multi_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/manager.py#L13-L103)
+- [multi_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
 
 **本节来源**
-- [manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/manager.py#L13-L103)
+- [manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/manager.py#L13-L103)
 
 ## 会话生命周期管理
 
@@ -116,10 +116,10 @@ Connection <|-- WebsocketConnection
 ```
 
 **图示来源**
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py#L60-L177)
+- [sessions.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/sessions.py#L60-L177)
 
 **本节来源**
-- [sessions.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/sessions.py#L1-L412)
+- [sessions.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/sessions.py#L1-L412)
 
 ## 多客户端连接支持
 
@@ -155,10 +155,10 @@ MultiClient-->>Client : 返回所有工具
 ```
 
 **图示来源**
-- [multi_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
+- [multi_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
 
 **本节来源**
-- [multi_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
+- [multi_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp/multi_client.py#L42-L226)
 
 ## OpenAI兼容协议交互
 
@@ -210,11 +210,11 @@ MCPClient --> ClientSession : "使用"
 ```
 
 **图示来源**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
-- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_client.py#L10-L53)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
+- [mcp_client.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_client.py#L10-L53)
 
 **本节来源**
-- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
+- [mcp_manager.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/services/mcp_openai/mcp_manager.py#L13-L118)
 
 ## 外部工具集成示例
 
@@ -288,10 +288,10 @@ def register_mcp_server(mcp: FastMCP):
 3. 在`if __name__ == "__main__":`块中启动服务器
 
 **本节来源**
-- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
-- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/lark_mcp/mcp_server.py#L1-L54)
-- [main.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/lark_mcp/main.py#L1-L31)
+- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
+- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/lark_mcp/mcp_server.py#L1-L54)
+- [main.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/lark_mcp/main.py#L1-L31)
 
 ## MCP服务扩展指南
 
@@ -346,7 +346,7 @@ weather_api_key = os.getenv("weather_api_key")
 - **websocket**：适用于双向通信需求
 
 **本节来源**
-- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/config/mcp_server.json#L1-L40)
-- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
-- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
-- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/mcp_servers/lark_mcp/mcp_server.py#L1-L54)
+- [mcp_server.json](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/config/mcp_server.json#L1-L40)
+- [mcp_arxiv.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/arxiv/mcp_arxiv.py#L1-L19)
+- [mcp_weather.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/weather/mcp_weather.py#L1-L63)
+- [mcp_server.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/mcp_servers/lark_mcp/mcp_server.py#L1-L54)

@@ -6,14 +6,14 @@
 
 ### 在线访问
 
-访问 [https://shy2593666979.github.io/AgentChat/](https://shy2593666979.github.io/AgentChat/) 查看在线文档。
+访问 [https://shy2593666979.github.io/agentchat-docs/](https://shy2593666979.github.io/agentchat-docs/) 查看在线文档。
 
 ### 本地开发
 
 1. **克隆仓库**
    ```bash
-   git clone https://github.com/Shy2593666979/AgentChat.git
-   cd AgentChat
+   git clone https://github.com/Shy2593666979/agentchat-docs.git
+   cd agentchat-docs
    ```
 
 2. **安装依赖**

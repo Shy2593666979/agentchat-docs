@@ -18,7 +18,7 @@
 本API参考文档为AgentChat平台提供完整的RESTful API说明。所有API端点均基于FastAPI框架自动生成的OpenAPI规范，按功能模块组织，涵盖用户管理、Agent操作、对话交互、知识库管理、工具集成等核心功能。文档详细说明了每个端点的HTTP方法、请求路径、认证要求、请求体结构和响应格式。
 
 **Section sources**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py)
 
 ## API版本与基础URL
 所有API端点均以`/api/v1`为前缀，实现API版本控制。基础URL结构如下：
@@ -28,7 +28,7 @@ https://<your-domain>/api/v1/<endpoint>
 当前版本为v1，未来扩展将通过新增版本前缀（如`/api/v2`）实现，确保向后兼容。
 
 **Section sources**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py#L6)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py#L6)
 
 ## 认证机制
 系统采用JWT（JSON Web Token）进行认证，通过`fastapi_jwt_auth`库实现。认证信息通过HTTP请求头传递。
@@ -55,8 +55,8 @@ Authorization: Bearer <access_token>
 当访问令牌过期时，可使用刷新令牌获取新的访问令牌（具体刷新端点需参考完整OpenAPI规范）。
 
 **Section sources**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L51-L78)
-- [JWT.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/JWT.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L51-L78)
+- [JWT.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/JWT.py)
 
 ## 错误码体系
 系统采用统一的响应模型，所有API响应均遵循`UnifiedResponseModel`结构。
@@ -81,9 +81,9 @@ class UnifiedResponseModel(BaseModel, Generic[DataT]):
 特定错误如用户名重复、应用名称重复等，通过`status_message`字段提供详细信息。
 
 **Section sources**
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py)
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L31)
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py#L22)
+- [schemas.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/schemas.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L31)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py#L22)
 
 ## 用户管理
 提供用户注册、登录、信息查询和更新功能。
@@ -146,7 +146,7 @@ PUT /api/v1/user/update
 ```
 
 **Section sources**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py)
 
 ## Agent操作
 管理AI助手（Agent）的创建、查询、更新和删除。
@@ -223,8 +223,8 @@ POST /api/v1/agent/search
 ```
 
 **Section sources**
-- [agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/agent.py)
-- [schema/agent.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/agent.py)
+- [agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/agent.py)
+- [schema/agent.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/agent.py)
 
 ## 对话接口
 与AI助手进行实时对话的核心接口，支持流式响应。
@@ -255,8 +255,8 @@ Content-Type: application/json
 - 内置断开连接检测和资源清理
 
 **Section sources**
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py)
-- [schema/chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/chat.py)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py)
+- [schema/chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/chat.py)
 
 ## 知识库管理
 管理知识库的创建、查询、更新、删除和检索。
@@ -315,8 +315,8 @@ POST /api/v1/knowledge/retrieval
 ```
 
 **Section sources**
-- [knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/knowledge.py)
-- [schema/knowledge.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/knowledge.py)
+- [knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/knowledge.py)
+- [schema/knowledge.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/knowledge.py)
 
 ## 工具调用
 管理工具的创建、查询和删除。
@@ -367,8 +367,8 @@ DELETE /api/v1/tool/delete
 ```
 
 **Section sources**
-- [tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/tool.py)
-- [schema/tool.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/tool.py)
+- [tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/tool.py)
+- [schema/tool.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/tool.py)
 
 ## 文件上传
 提供文件上传功能，支持常见格式。
@@ -396,7 +396,7 @@ Authorization: Bearer <access_token>
 上传后的文件URL可用于对话接口中的`file_url`参数。
 
 **Section sources**
-- [upload.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/upload.py)
+- [upload.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/upload.py)
 
 ## 使用示例
 ### 创建Agent的curl命令
@@ -453,9 +453,9 @@ curl -X POST "http://localhost:8000/api/v1/upload" \
 ```
 
 **Section sources**
-- [user.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/user.py#L51)
-- [chat.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/chat.py#L49)
-- [upload.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/v1/upload.py#L12)
+- [user.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/user.py#L51)
+- [chat.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/chat.py#L49)
+- [upload.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/v1/upload.py#L12)
 
 ## 兼容性与扩展
 ### 版本控制
@@ -467,5 +467,5 @@ curl -X POST "http://localhost:8000/api/v1/upload" \
 - 错误处理机制统一，通过`status_message`提供详细的错误信息
 
 **Section sources**
-- [router.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/api/router.py)
-- [schemas.py](https://github.com/Shy2593666979/AgentChat/src/backend/agentchat/schema/schemas.py)
+- [router.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/api/router.py)
+- [schemas.py](https://github.com/Shy2593666979/AgentChat/tree/main/src/backend/agentchat/schema/schemas.py)
