@@ -1,0 +1,55 @@
+/**
+ * 自定义CSS变量
+ * 这些变量会覆盖VitePress默认主题的变量
+ */
+
+:root {
+  /* 品牌色彩 */
+  --vp-c-brand-1: #3c82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+  --vp-c-brand-soft: rgba(60, 130, 246, 0.14);
+
+  /* 背景色 */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f8fafc;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f8fafc;
+
+  /* 文本色 */
+  --vp-c-text-1: #213547;
+  --vp-c-text-2: #476582;
+  --vp-c-text-3: #7c8b9c;
+
+  /* 边框色 */
+  --vp-c-divider: #e2e8f0;
+  --vp-c-border: #cbd5e1;
+
+  /* 代码块 */
+  --vp-code-line-height: 1.7;
+  --vp-code-font-size: 0.875em;
+  --vp-code-color: #476582;
+  --vp-code-link-color: var(--vp-c-brand-1);
+  --vp-code-bg: #f8fafc;
+
+  /* 自定义字体 */
+  --vp-font-family-base: "Inter", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --vp-font-family-mono: "JetBrains Mono", "Fira Code", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.dark {
+  /* 暗色主题 */
+  --vp-c-bg: #1a1a1a;
+  --vp-c-bg-alt: #262626;
+  --vp-c-bg-elv: #202020;
+  --vp-c-bg-soft: #262626;
+
+  --vp-c-text-1: #f1f5f9;
+  --vp-c-text-2: #cbd5e1;
+  --vp-c-text-3: #94a3b8;
+
+  --vp-c-divider: #334155;
+  --vp-c-border: #475569;
+
+  --vp-code-bg: #262626;
+}

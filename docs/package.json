@@ -1,0 +1,19 @@
+{
+  "name": "agentchat-docs",
+  "version": "1.0.0",
+  "description": "AgentChat项目技术文档",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "serve": "vitepress serve"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.31",
+    "vue": "^3.3.8"
+  },
+  "dependencies": {
+    "mermaid": "^10.6.1"
+  }
+}

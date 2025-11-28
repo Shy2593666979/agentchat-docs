@@ -1,0 +1,222 @@
+/**
+ * 自定义样式
+ * 用于覆盖和扩展VitePress默认主题样式
+ */
+
+/* 全局样式优化 */
+.vp-doc {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* 标题样式优化 */
+.vp-doc h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--vp-c-divider);
+  padding-bottom: 1rem;
+}
+
+.vp-doc h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.5rem;
+}
+
+.vp-doc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* 代码块样式优化 */
+.vp-doc div[class*='language-'] {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.vp-doc div[class*='language-'] pre {
+  padding: 1.5rem;
+  line-height: 1.6;
+}
+
+/* 表格样式优化 */
+.vp-doc table {
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc table th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+}
+
+.vp-doc table td {
+  padding: 1rem;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc table tr:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* 引用块样式 */
+.vp-doc blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--vp-c-bg-soft);
+  border-left: 4px solid var(--vp-c-brand-1);
+  border-radius: 0 8px 8px 0;
+}
+
+/* 链接样式优化 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+
+/* 列表样式优化 */
+.vp-doc ul, .vp-doc ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.vp-doc li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* 图片样式优化 */
+.vp-doc img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+}
+
+/* Mermaid图表样式 */
+.mermaid {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* 导航栏样式优化 */
+.VPNav {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dark .VPNav {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* 侧边栏样式优化 */
+.VPSidebar {
+  background-color: var(--vp-c-bg-alt);
+}
+
+/* 首页Hero区域样式 */
+.VPHero .title {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 功能特性卡片样式 */
+.VPFeature {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  background-color: var(--vp-c-bg);
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 8px 25px rgba(60, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .vp-doc h1 {
+    font-size: 2rem;
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+  
+  .vp-doc h3 {
+    font-size: 1.25rem;
+  }
+  
+  .vp-doc table {
+    font-size: 0.875rem;
+  }
+  
+  .vp-doc table th,
+  .vp-doc table td {
+    padding: 0.75rem;
+  }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-brand-1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-2);
+}
+
+/* 代码复制按钮样式 */
+.vp-code-group .tabs {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* 搜索框样式优化 */
+.DocSearch-Button {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-border);
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* 页脚样式 */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  background-color: var(--vp-c-bg-alt);
+}
