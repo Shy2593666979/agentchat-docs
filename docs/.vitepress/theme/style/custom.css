@@ -97,7 +97,8 @@
 }
 
 /* 列表样式优化 */
-.vp-doc ul, .vp-doc ol {
+.vp-doc ul,
+.vp-doc ol {
   margin: 1rem 0;
   padding-left: 2rem;
 }
@@ -165,19 +166,19 @@
   .vp-doc h1 {
     font-size: 2rem;
   }
-  
+
   .vp-doc h2 {
     font-size: 1.5rem;
   }
-  
+
   .vp-doc h3 {
     font-size: 1.25rem;
   }
-  
+
   .vp-doc table {
     font-size: 0.875rem;
   }
-  
+
   .vp-doc table th,
   .vp-doc table td {
     padding: 0.75rem;

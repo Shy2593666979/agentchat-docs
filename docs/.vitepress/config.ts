@@ -240,5 +240,17 @@ export default defineConfig({
     optimizeDeps: {
       include: ['mermaid']
     }
-  }
+  },
+
+  // 忽略死链检查，特别是localhost开发环境链接
+  ignoreDeadLinks: [
+    // 忽略所有localhost链接
+    /^http:\/\/localhost/,
+    // 忽略特定的开发环境链接
+    'http://localhost:7860',
+    'http://localhost:8090',
+    'http://localhost:7860/health',
+    'http://localhost:8090/health',
+    'http://localhost:7860/docs'
+  ]
 })
