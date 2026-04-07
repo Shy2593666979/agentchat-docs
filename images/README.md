@@ -3,6 +3,5 @@
 
 欢迎大家加入！！！
 
+<img width="400" height="600" alt="5ae366807dca8b06bd8c7c06a876e880" src="https://github.com/user-attachments/assets/1cb653ad-5a7d-432b-b0e0-7eac07913d76" />
 
-
-<img width="400" height="600" alt="73f74567-7a97-4cd8-ab05-34759efa25cc" src="https://github.com/user-attachments/assets/d3214f7c-3f18-4ea3-b074-f7f6e299e42e" />
