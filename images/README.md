@@ -4,4 +4,4 @@
 欢迎大家加入！！！
 
 
-<img width="400" height="677" alt="021ac75bd05752f82fd5caf310caf176" src="https://github.com/user-attachments/assets/b76d7b28-a171-4bf1-8473-858b65e9e9e2" />
+<img width="400" height="677" alt="77f51c9dbb09e5916b8e36581d9bfd6b" src="https://github.com/user-attachments/assets/13dba542-38db-40c7-a8b9-e260177360bd" />
